@@ -100,11 +100,11 @@ layers:
   - '&mkp MB5'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - PG DN
-  - LBRACE
-  - $$mdi:arrow-down-bold$$
-  - RBRACE
   - '{'
+  - $$mdi:arrow-down-bold$$
   - '}'
+  - _
+  - +
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB OFF
   - RGB ON
