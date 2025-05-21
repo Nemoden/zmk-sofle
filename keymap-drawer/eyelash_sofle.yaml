@@ -54,7 +54,7 @@ layers:
   - {t: /, s: '?'}
   - '}'
   - $$mdi:volume-off$$
-  - F0
+  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-option$$
   - LGUI
   - LAYER1
