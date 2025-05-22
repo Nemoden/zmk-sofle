@@ -33,8 +33,8 @@
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <75>;
+            tapping-term-ms = <175>;
+            quick-tap-ms = <100>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
@@ -42,8 +42,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <150>;
-            quick-tap-ms = <75>;
+            tapping-term-ms = <175>;
+            quick-tap-ms = <150>;
             bindings = <&mo>, <&kp>;
             display-name = "Layer-Tap";
         };
