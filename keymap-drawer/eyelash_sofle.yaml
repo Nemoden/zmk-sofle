@@ -26,7 +26,7 @@ layers:
   - I
   - O
   - P
-  - '{'
+  - {t: '[', s: '{'}
   - $$mdi:apple-keyboard-shift$$
   - {t: A, h: LAYER1}
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
@@ -52,7 +52,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - '}'
+  - {t: ']', s: '}'}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-option$$
@@ -100,9 +100,9 @@ layers:
   - '&mkp MB5'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - PG DN
-  - '{'
+  - {t: '[', s: '{'}
   - $$mdi:arrow-down-bold$$
-  - '}'
+  - {t: ']', s: '}'}
   - _
   - +
   - {t: '$$mdi:transfer$$', type: trans}
