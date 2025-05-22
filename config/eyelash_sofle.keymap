@@ -34,7 +34,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
+            quick-tap-ms = <75>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
@@ -43,6 +43,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <150>;
+            quick-tap-ms = <75>;
             bindings = <&mo>, <&kp>;
             display-name = "Layer-Tap";
         };
@@ -137,6 +138,7 @@
 &trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
             >;
+
 
             sensor-bindings = <&scroll_encoder>;
             display-name = "LAYER1";
