@@ -100,7 +100,7 @@ layers:
   - '&mkp MB5'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - PG DN
-  - '}'
+  - '{'
   - $$mdi:arrow-down-bold$$
   - '}'
   - _
