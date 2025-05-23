@@ -54,17 +54,17 @@ layers:
   - {t: /, s: '?'}
   - {t: ']', s: '}'}
   - $$mdi:volume-off$$
-  - $$mdi:keyboard-esc$$
-  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - LGUI
-  - LAYER1
+  - {t: \, h: LAYER1, s: '|'}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - '2'
-  - {t: '-', s: _}
+  - {t: '-', h: '2', s: _}
   - {t: '=', s: +}
-  - {t: \, s: '|'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-caps$$
   LAYER1:
   - $$mdi:keyboard-esc$$
   - F1
