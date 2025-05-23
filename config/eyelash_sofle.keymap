@@ -36,7 +36,7 @@
             tapping-term-ms = <180>;
             quick-tap-ms = <130>;
             require-prior-idle-ms = <130>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
         lt: layer_tap {
