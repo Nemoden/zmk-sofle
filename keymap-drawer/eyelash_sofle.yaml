@@ -91,7 +91,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - BLSH
+  - $$mdi:apple-keyboard-caps$$
   - '&tp TAB'
   - {t: '$$mdi:transfer$$', type: trans}
   - (
