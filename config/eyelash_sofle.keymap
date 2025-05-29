@@ -129,7 +129,7 @@ XXX             XXX              XXX             XXX              XXX           
 XXX             XXX              XXX             XXX              XXX              XXX                &kp UP_ARROW       XXX              XXX              XXX            XXX           XXX           XXX
 &kp GRAVE       &kp EXCL         &kp AT          &kp HASH         &kp DOLLAR       &kp PERCENT        &kp DOWN_ARROW     &kp CARET        &kp AMPS         &kp STAR       ___           ___           ___
 &tp TAB         ___              ___             &mmv MOVE_UP     &mmv MOVE_RIGHT  &kp PG_UP          &kp LEFT_ARROW     &kp LEFT         &kp DOWN         &kp UP         &kp RIGHT     ___           ___
-&kp LCTRL       ___              ___             &mmv MOVE_DOWN   ___              &kp PG_DOWN        &kp RIGHT_ARROW    ___              &mkp LCLK        &mkp MCLK      &mkp RCLK     ___           ___
+&kp LCTRL       ___              ___             &mmv MOVE_DOWN   ___              &kp PG_DN          &kp RIGHT_ARROW    ___              &mkp LCLK        &mkp MCLK      &mkp RCLK     ___           ___
 &kp C_MUTE      ___              ___             ___              &tp RSHIFT ESC   &kp SPACE          XXX                &kp ENTER        &trans           &kp TAB        &trans        ___
             >;
 
