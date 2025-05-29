@@ -100,7 +100,7 @@ XXX             XXX              XXX             XXX              XXX           
 &kp GRAVE       &kp Q            &kp W           &kp E            &kp R            &kp T              &kp DOWN_ARROW     &kp Y            &kp U            &kp I          &kp O         &kp P         &kp LBKT
 &tp TAB         &kp A            &hl LCTRL S     &hl LALT D       &hl LGUI F       &kp G              &kp LEFT_ARROW     &kp H            &hr RGUI J       &hr RALT K     &hr RCTRL L   &kp SEMI      &kp APOS
 &kp LCTRL       &kp Z            &kp X           &kp C            &kp V            &kp B              &kp RIGHT_ARROW    &kp N            &kp M            &kp COMMA      &kp DOT       &kp SLASH     &kp RBKT
-&kp C_MUTE      XXX              XXX             &lt 1 DEL        &tp RSHIFT ESC   &kp SPACE          &kp ENTER          &kp ENTER        &kp TAB          &lt 2 BSPC      XXX           XXXX
+&kp C_MUTE      XXX              XXX             &lt 1 DEL        &tp RSHIFT ESC   &kp SPACE          &kp ENTER          &kp ENTER        &kp TAB          &lt 2 BSPC      XXX          XXX
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
