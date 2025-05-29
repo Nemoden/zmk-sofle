@@ -115,7 +115,7 @@ XXX             XXX              XXX             XXX              XXX           
 XXX             XXX              XXX             XXX              XXX              XXX                &kp UP_ARROW       XXX              XXX              XXX            XXX           XXX           XXX
 &kp GRAVE       &kp N1           &kp N2          &kp N3           &kp N4           &kp N5             &kp DOWN_ARROW     &kp N6           &kp N7           &kp N8         &kp N9        &kp N0        &kp BLSH
 &tp TAB         ___              &kp LPAR        &kp MINUS        &kp PLUS         &kp RPAR           &kp LEFT_ARROW     &kp LT           &kp LBRC         &kp RBRC       &kp GT        &kp SEMI      &kp APOS
-&kp LCTRL       ___              ___             ___              ___              ___                &kp RIGHT_ARROW    &kp EQ           &kp LBKT         &kp RBKT       &kp UNDER     &kp BSLH      &kp PIPE
+&kp LCTRL       ___              ___             ___              ___              ___                &kp RIGHT_ARROW    &kp KP_EQUAL     &kp LBKT         &kp RBKT       &kp UNDER     &kp BSLH      &kp PIPE
 &kp C_MUTE      ___              ___             ___              &tp RSHIFT ESC   &kp SPACE          &kp ENTER          &kp SPACE        &kp TAB          &kp BSPC       XXX           XXX
             >;
 
