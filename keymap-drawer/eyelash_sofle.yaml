@@ -112,7 +112,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-right-bold$$
-  - EQ
+  - KP EQUAL
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - _
