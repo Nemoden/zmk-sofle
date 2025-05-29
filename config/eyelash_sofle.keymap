@@ -112,11 +112,11 @@ XXX             XXX              XXX             XXX              XXX           
 
         layer1 {
             bindings = <
-XXX             XXX              XXX             XXX              XXX              XXX                &kp UP_ARROW       XXX              XXXX             XXX            XXX           XXX           XXX
+XXX             XXX              XXX             XXX              XXX              XXX                &kp UP_ARROW       XXX              XXX              XXX            XXX           XXX           XXX
 &kp GRAVE       &kp N1           &kp N2          &kp N3           &kp N4           &kp N5             &kp DOWN_ARROW     &kp N6           &kp N7           &kp N8         &kp N9        &kp N0        &kp BLSH
 &tp TAB         ___              &kp LPAR        &kp MINUS        &kp PLUS         &kp RPAR           &kp LEFT_ARROW     &kp LT           &kp LBRC         &kp RBRC       &kp GT        &kp SEMI      &kp APOS
 &kp LCTRL       ___              ___             ___              ___              ___                &kp RIGHT_ARROW    &kp EQ           &kp LBKT         &kp RBKT       &kp UNDER     &kp BSLH      &kp PIPE
-&kp C_MUTE      ___              ___             ___              &tp RSHIFT ESC   &kp SPACE          &kp ENTER          &kp SPACE        &kp TAB          &kp BCPC       XXX           XXX
+&kp C_MUTE      ___              ___             ___              &tp RSHIFT ESC   &kp SPACE          &kp ENTER          &kp SPACE        &kp TAB          &kp BSPC       XXX           XXX
             >;
 
 
@@ -126,7 +126,7 @@ XXX             XXX              XXX             XXX              XXX           
 
         layer_2 {
             bindings = <
-XXX             XXX              XXX             XXX              XXX              XXX                &kp UP_ARROW       XXX              XXXX             XXX            XXX           XXX           XXX
+XXX             XXX              XXX             XXX              XXX              XXX                &kp UP_ARROW       XXX              XXX              XXX            XXX           XXX           XXX
 &kp GRAVE       &kp EXCL         &kp AT          &kp HASH         &kp DOLLAR       &kp PERCENT        &kp DOWN_ARROW     &kp CARET        &kp AMPS         &kp STAR       ___           ___           ___
 &tp TAB         ___              ___             &mmv MOVE_UP     &mmv MOVE_RIGHT  &kp PG_UP          &kp LEFT_ARROW     &kp LEFT         &kp DOWN         &kp UP         &kp RIGHT     ___           ___
 &kp LCTRL       ___              ___             &mmv MOVE_DOWN   ___              &kp PG_DOWN        &kp RIGHT_ARROW    ___              &mkp LCLK        &mkp MCLK      &mkp RCLK     ___           ___
