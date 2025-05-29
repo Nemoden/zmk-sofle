@@ -27,7 +27,7 @@ layers:
   - O
   - P
   - {t: '[', s: '{'}
-  - '&tp TAB'
+  - $$mdi:keyboard-tab$$
   - A
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
@@ -92,7 +92,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - $$mdi:apple-keyboard-caps$$
-  - '&tp TAB'
+  - $$mdi:keyboard-tab$$
   - {t: '$$mdi:transfer$$', type: trans}
   - (
   - {t: '-', s: _}
@@ -157,7 +157,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&tp TAB'
+  - $$mdi:keyboard-tab$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
