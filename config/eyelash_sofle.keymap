@@ -39,7 +39,7 @@
             flavor = "balanced";
             tapping-term-ms = <220>;
             quick-tap-ms = <180>;
-            reuire-prior-idle-ms = <140>;
+            require-prior-idle-ms = <140>;
             hold-trigger-on-release;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
