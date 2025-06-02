@@ -90,47 +90,47 @@
     combos {
         compatible = "zmk,combos";
         combo_left_bracket {
-            timeout-ms = <70>;
+            timeout-ms = <60>;
             key-positions = <29 30>; // df
             bindings = <&kp LBKT>;
         };
         combo_right_bracket {
-            timeout-ms = <70>;
+            timeout-ms = <60>;
             key-positions = <34 35>; // jk
             bindings = <&kp RBKT>;
         };
         combo_left_par {
-            timeout-ms = <70>;
+            timeout-ms = <60>;
             key-positions = <28 29>; // sd
             bindings = <&kp LPAR>;
         };
         combo_right_par {
-            timeout-ms = <70>;
+            timeout-ms = <60>;
             key-positions = <35 36>; // hj
             bindings = <&kp RPAR>;
         };
         combo_under {
-            timeout-ms = <70>;
+            timeout-ms = <60>;
             key-positions = <41 42>; // xc
             bindings = <&kp UNDER>;
         };
         combo_equal {
-            timeout-ms = <70>;
+            timeout-ms = <60>;
             key-positions = <48 49>; // ,.
             bindings = <&kp EQUAL>;
         };
         combo_minus {
-            timeout-ms = <70>;
+            timeout-ms = <60>;
             key-positions = <15 16>; // we
             bindings = <&kp MINUS>;
         };
         combo_plus {
-            timeout-ms = <70>;
+            timeout-ms = <60>;
             key-positions = <16 17>; // er
             bindings = <&kp PLUS>;
         };
         combo_backslash {
-            timeout-ms = <70>;
+            timeout-ms = <60>;
             key-positions = <22 23>; // io
             bindings = <&kp BACKSLASH>;
         };
