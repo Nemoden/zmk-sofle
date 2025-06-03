@@ -188,7 +188,6 @@
             compatible = "zmk,behavior-macro";
             label = "Tmux Next Pane";
             #binding-cells = <0>;
-            wait-ms = <10>;
             bindings
               = <&macro_tap &kp LC(A)>
               , <&kp O>
@@ -199,7 +198,6 @@
             compatible = "zmk,behavior-macro";
             label = "Tmux Previous Pane";
             #binding-cells = <0>;
-            wait-ms = <10>;
             bindings
               = <&macro_tap &kp LC(A)>
               , <&kp COLON>
@@ -277,8 +275,8 @@ XXX             XXX              XXX             XXX              XXX           
             bindings = <
 XXX             XXX              XXX             XXX              XXX              XXX                &macro_tmux_next_pane     XXX              XXX              XXX            XXX           XXX           XXX
 &kp GRAVE       &kp N1           &kp N2          &kp N3           &kp N4           &kp N5             &macro_tmux_prev_pane     &kp N6           &kp N7           &kp N8         &kp N9        &kp N0        &kp CAPSLOCK
-&tp RSHIFT ESC  ___              &kp LPAR        &kp MINUS        &kp PLUS         &kp RPAR           &macro_tmux_next_window   &kp LT           &kp LBRC         &kp RBRC       &kp GT        &kp SEMI      &kp APOS
-&kp LCTRL       ___              ___             ___              ___              ___                &macro_tmux_prev_window   &kp KP_EQUAL     &kp LBKT         &kp RBKT       &kp UNDER     &kp BSLH      &kp PIPE
+&tp RSHIFT ESC  ___              &kp LPAR        &kp MINUS        &kp PLUS         &kp RPAR           &macro_tmux_prev_window   &kp LT           &kp LBRC         &kp RBRC       &kp GT        &kp SEMI      &kp APOS
+&kp LCTRL       ___              ___             ___              ___              ___                &macro_tmux_next_window   &kp KP_EQUAL     &kp LBKT         &kp RBKT       &kp UNDER     &kp BSLH      &kp PIPE
 &kp C_MUTE      ___              ___             ___              &kp TAB          &kp SPACE          &kp ENTER                 &kp SPACE        &kp BSPC         &kp BSPC       XXX           XXX
             >;
 
