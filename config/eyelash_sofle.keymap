@@ -150,12 +150,9 @@
             compatible = "zmk,behavior-macro";
             label = "Tmux Prefix";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            bindings
-              = <&macro_press &kp LCTRL>
-              , <&macro_tap B>
-              , <&macro_release &kp LCTRL>
-              ;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&macro_tap &kp LC(B)>;
         };
         macro_tmux_next_window: macro_tmux_next_window {
           compatible = "zmk,behavior-macro";
