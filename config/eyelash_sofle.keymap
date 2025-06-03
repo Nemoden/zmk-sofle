@@ -152,7 +152,7 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings = <&macro_tap &kp LC(B)>;
+            bindings = <&macro_tap &kp LC(A)>;
         };
         macro_tmux_next_window: macro_tmux_next_window {
           compatible = "zmk,behavior-macro";
@@ -160,7 +160,7 @@
           #binding-cells = <0>;
             wait-ms = <10>;
           bindings
-            = <&macro_tap &kp LC(B)>
+            = <&macro_tap &kp LC(A)>
             , <&kp N>
             ;
         };
@@ -170,7 +170,7 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             bindings
-              = <&macro_tap &kp LC(B)>
+              = <&macro_tap &kp LC(A)>
               , <&kp P>
               ;
         };
@@ -180,7 +180,7 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             bindings
-              = <&macro_tap &kp LC(B)>
+              = <&macro_tap &kp LC(A)>
               , <&kp COLON>
               ;
         };
@@ -190,7 +190,7 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             bindings
-              = <&macro_tap &kp LC(B)>
+              = <&macro_tap &kp LC(A)>
               , <&kp O>
               ;
         };
@@ -201,7 +201,7 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             bindings
-              = <&macro_tap &kp LC(B)>
+              = <&macro_tap &kp LC(A)>
               , <&kp COLON>
               , <&kp S &kp E &kp L &kp E &kp C &kp T &kp MINUS &kp P &kp A &kp N &kp E &kp SPACE &kp MINUS &kp T &kp SPACE &kp COLON &kp PERIOD &kp MINUS>
               , <&kp ENTER>
