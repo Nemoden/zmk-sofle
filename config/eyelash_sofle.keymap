@@ -207,30 +207,22 @@
               , <&kp ENTER>
               ;
         };
-        macro_macos_chrome_next_tab: macro_macos_chrome_next_tab {
+        macro_chrome_next_tab: macro_chrome_next_tab {
             compatible = "zmk,behavior-macro";
             label = "MacOS Chrome Next Tab";
             #binding-cells = <0>;
             wait-ms = <10>;
-            bindings
-              = <&macro_press &kp LGUI>
-              , <&macro_press &kp LALT>
-              , <&macro_tap &kp RIGHT_ARROW>
-              , <&macro_release &kp LALT>
-              , <&macro_release &kp LGUI>
-              ;
+            bindings = <&kp LC(TAB)>;
         };
-        macro_macos_chrome_prev_tab: macro_macos_chrome_prev_tab {
+        macro_chrome_prev_tab: macro_chrome_prev_tab {
             compatible = "zmk,behavior-macro";
             label = "MacOS Chrome Previous Tab";
             #binding-cells = <0>;
             wait-ms = <10>;
             bindings
-              = <&macro_press &kp LGUI>
-              , <&macro_press &kp LALT>
-              , <&macro_tap &kp LEFT_ARROW>
-              , <&macro_release &kp LALT>
-              , <&macro_release &kp LGUI>
+              = <&macro_press &kp LSHIFT>
+              , <&macro_tap &kp LC(TAB)>
+              , <&macro_release &kp LSHIFT>
               ;
         };
     };
@@ -254,7 +246,7 @@
     encoder_chrome_tabs: encoder_chrome_tabs {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
-        bindings = <&macro_macos_chrome_next_tab>, <&macro_macos_chrome_prev_tab>;
+        bindings = <&macro_chrome_next_tab>, <&macro_chrome_prev_tab>;
     };
 
     keymap {
