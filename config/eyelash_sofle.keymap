@@ -212,9 +212,11 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             bindings
-              = <&macro_press &kp LGUI &kp LALT>
+              = <&macro_press &kp LGUI>
+              , <&macro_press &kp LALT>
               , <&macro_tap RIGHT_ARROW>
-              , <&macro_release &kp LGUI &kp LALT>
+              , <&macro_release &kp LALT>
+              , <&macro_release &kp LGUI>
               ;
         };
         macro_macos_chrome_prev_tab: macro_macos_chrome_prev_tab {
@@ -223,9 +225,11 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             bindings
-              = <&macro_press &kp LGUI &kp LALT>
+              = <&macro_press &kp LGUI>
+              , <&macro_press &kp LALT>
               , <&macro_tap LEFT_ARROW>
-              , <&macro_release &kp LGUI &kp LALT>
+              , <&macro_release &kp LALT>
+              , <&macro_release &kp LGUI>
               ;
         };
     };
