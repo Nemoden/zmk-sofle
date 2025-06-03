@@ -98,7 +98,7 @@ layers:
   - {t: '-', s: _}
   - +
   - )
-  - '&macro_tmux_next_window'
+  - '&macro_tmux_prev_window'
   - <
   - '{'
   - '}'
@@ -111,7 +111,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&macro_tmux_prev_window'
+  - '&macro_tmux_next_window'
   - KP EQUAL
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
