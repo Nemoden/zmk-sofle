@@ -215,7 +215,7 @@
             bindings
               = <&macro_press &kp LGUI>
               , <&macro_press &kp LALT>
-              , <&macro_tap RIGHT_ARROW>
+              , <&macro_tap &kp RIGHT_ARROW>
               , <&macro_release &kp LALT>
               , <&macro_release &kp LGUI>
               ;
@@ -228,7 +228,7 @@
             bindings
               = <&macro_press &kp LGUI>
               , <&macro_press &kp LALT>
-              , <&macro_tap LEFT_ARROW>
+              , <&macro_tap &kp LEFT_ARROW>
               , <&macro_release &kp LALT>
               , <&macro_release &kp LGUI>
               ;
