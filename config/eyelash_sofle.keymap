@@ -92,47 +92,144 @@
         combo_left_bracket {
             timeout-ms = <55>;
             key-positions = <29 30>; // df
+            layers = <0>;
             bindings = <&kp LBKT>;
         };
         combo_right_bracket {
             timeout-ms = <55>;
             key-positions = <34 35>; // jk
+            layers = <0>;
             bindings = <&kp RBKT>;
         };
         combo_left_par {
             timeout-ms = <55>;
             key-positions = <28 29>; // sd
+            layers = <0>;
             bindings = <&kp LPAR>;
         };
         combo_right_par {
             timeout-ms = <55>;
             key-positions = <35 36>; // hj
+            layers = <0>;
             bindings = <&kp RPAR>;
         };
         combo_under {
             timeout-ms = <55>;
             key-positions = <41 42>; // xc
+            layers = <0>;
             bindings = <&kp UNDER>;
         };
         combo_equal {
             timeout-ms = <55>;
             key-positions = <48 49>; // ,.
+            layers = <0>;
             bindings = <&kp EQUAL>;
         };
         combo_minus {
             timeout-ms = <55>;
             key-positions = <15 16>; // we
+            layers = <0>;
             bindings = <&kp MINUS>;
         };
         combo_plus {
             timeout-ms = <55>;
             key-positions = <16 17>; // er
+            layers = <0>;
             bindings = <&kp PLUS>;
         };
         combo_backslash {
             timeout-ms = <55>;
             key-positions = <22 23>; // io
+            layers = <0>;
             bindings = <&kp BACKSLASH>;
+        };
+    };
+
+    macros {
+        macro_tmux_prefix: macro_tmux_prefix {
+            compatible = "zmk,behavior-macro";
+            label = "Tmux Prefix";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            bindings
+              = <&macro_press &kp LCTRL>
+              , <&macro_tap B>
+              , <&macro_release &kp LCTRL>
+              ;
+        };
+        macro_tmux_next_window: macro_tmux_next_window {
+          compatible = "zmk,behavior-macro";
+          label = "Next Tmux Window";
+          #binding-cells = <0>;
+            wait-ms = <10>;
+          bindings
+            = <&macro_tmux_prefix>
+            , <&macro_tap N>
+            ;
+        };
+        macro_tmux_prev_window: macro_tmux_prev_window {
+            compatible = "zmk,behavior-macro";
+            label = "Previous Tmux Window";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            bindings
+              = <&macro_tmux_prefix>
+              , <&macro_tap P>
+              ;
+        };
+        macro_tmux_cmd: macro_tmux_cmd {
+            compatible = "zmk,behavior-macro";
+            label = "Tmux Command";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            bindings
+              = <&macro_tmux_prefix>
+              , <&macro_tap P>
+              ;
+        };
+        macro_tmux_next_pane: macro_tmux_next_pane {
+            compatible = "zmk,behavior-macro";
+            label = "Tmux Next Pane";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            bindings
+              = <&macro_tmux_prefix>
+              , <&kp O>
+              ;
+        };
+        // There is no inverse for <Prefix o> in TMUX, so we do this instead :select-pane -t :.- followed by an ENTER
+        macro_tmux_prev_pane: macro_tmux_prev_pane {
+            compatible = "zmk,behavior-macro";
+            label = "Tmux Previous Pane";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            bindings
+              = <&macro_tmux_cmd>
+              , <&kp S &kp E &kp L &kp E &kp C &kp T &kp MINUS &kp P &kp A &kp N &kp E &kp SPACE &kp MINUS &kp T &kp SPACE &kp COLON &kp PERIOD &kp MINUS>
+              , <&kp ENTER>
+              ;
+        };
+        macro_macos_chrome_next_tab: macro_macos_chrome_next_tab {
+            compatible = "zmk,behavior-macro";
+            label = "MacOS Chrome Next Tab";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            bindings
+              = <&macro_press &kp LGUI &kp LALT>
+              , <&macro_tap RIGHT_ARROW>
+              , <&macro_release &kp LGUI &kp LALT>
+              ;
+        };
+        macro_macos_chrome_prev_tab: macro_macos_chrome_prev_tab {
+            compatible = "zmk,behavior-macro";
+            label = "MacOS Chrome Previous Tab";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            bindings
+              = <&macro_press &kp LGUI &kp LALT>
+              , <&macro_tap LEFT_ARROW>
+              , <&macro_release &kp LGUI &kp LALT>
+              ;
         };
     };
 
@@ -140,7 +237,22 @@
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-        tap-ms = <100>;
+        tap-ms = <30>;
+    };
+    encoder_tmux_window_nav: encoder_tmux_window_nav {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&macro_tmux_prev_window>, <&macro_tmux_next_window>;
+    };
+    encoder_tmux_pane_nav: encoder_tmux_pane_nav {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&macro_tmux_prev_pane>, <&macro_tmux_next_pane>;
+    };
+    encoder_chrome_tabs: encoder_chrome_tabs {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&macro_macos_chrome_prev_tab>, <&macro_macos_chrome_next_tab>;
     };
 
     keymap {
@@ -168,7 +280,7 @@ XXX             XXX              XXX             XXX              XXX           
 &kp C_MUTE      ___              ___             ___              &kp TAB          &kp SPACE          &kp ENTER          &kp SPACE        &kp BSPC         &kp BSPC       XXX           XXX
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&encoder_tmux_window_nav>;
             display-name = "SYM";
         };
 
@@ -181,7 +293,7 @@ XXX             XXX              XXX             XXX              XXX           
 &kp C_MUTE      ___              ___             ___              &kp TAB          &kp SPACE          XXX                &kp ENTER        &kp BSPC         ___            &trans        ___
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&encoder_chrome_tabs>;
             display-name = "NAV";
         };
 
