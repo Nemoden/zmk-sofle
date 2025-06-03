@@ -164,7 +164,7 @@
             wait-ms = <10>;
           bindings
             = <&macro_tmux_prefix>
-            , <&macro_tap N>
+            , <&kp N>
             ;
         };
         macro_tmux_prev_window: macro_tmux_prev_window {
@@ -174,7 +174,7 @@
             wait-ms = <10>;
             bindings
               = <&macro_tmux_prefix>
-              , <&macro_tap P>
+              , <&kp P>
               ;
         };
         macro_tmux_cmd: macro_tmux_cmd {
@@ -184,7 +184,7 @@
             wait-ms = <10>;
             bindings
               = <&macro_tmux_prefix>
-              , <&macro_tap P>
+              , <&kp P>
               ;
         };
         macro_tmux_next_pane: macro_tmux_next_pane {
