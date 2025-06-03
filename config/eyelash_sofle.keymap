@@ -160,7 +160,7 @@
           #binding-cells = <0>;
             wait-ms = <10>;
           bindings
-            = <&macro_tmux_prefix>
+            = <&macro_tap &kp LC(B)>
             , <&kp N>
             ;
         };
@@ -170,7 +170,7 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             bindings
-              = <&macro_tmux_prefix>
+              = <&macro_tap &kp LC(B)>
               , <&kp P>
               ;
         };
@@ -180,7 +180,7 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             bindings
-              = <&macro_tmux_prefix>
+              = <&macro_tap &kp LC(B)>
               , <&kp P>
               ;
         };
@@ -190,7 +190,7 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             bindings
-              = <&macro_tmux_prefix>
+              = <&macro_tap &kp LC(B)>
               , <&kp O>
               ;
         };
