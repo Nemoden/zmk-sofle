@@ -268,10 +268,10 @@ XXX             XXX              XXX             XXX              XXX           
         layer1 {
             bindings = <
 XXX             XXX              XXX             XXX              XXX              XXX                &macro_tmux_prev_pane     XXX              XXX              XXX            XXX           XXX           XXX
-&kp GRAVE       &kp EXCL         &kp AT          &kp HASH         &kp DOLLAR       &kp PERCENT        &macro_tmux_next_pane     &kp N6           &kp N7           &kp N8         &kp N9        &kp N0        &kp CAPSLOCK
+&kp GRAVE       &kp EXCL         &kp AT          &kp HASH         &kp DOLLAR       &kp PERCENT        &macro_tmux_next_pane     &kp CARET        &kp AMPS         &kp STAR       ___           ___           &kp CAPSLOCK
 &tp RSHIFT ESC  ___              &kp LPAR        &kp MINUS        &kp PLUS         &kp RPAR           &macro_tmux_prev_window   &kp LT           &kp LBRC         &kp RBRC       &kp GT        &kp SEMI      &kp APOS
 &kp LCTRL       ___              ___             ___              ___              ___                &macro_tmux_next_window   &kp KP_EQUAL     &kp LBKT         &kp RBKT       &kp UNDER     &kp BSLH      &kp PIPE
-&kp C_MUTE      ___              ___             ___              &kp TAB          &kp SPACE          &kp ENTER                 &kp ENTER        &kp BSPC         &kp BSPC       XXX           XXX
+&kp C_MUTE      ___              ___             ___              &kp TAB          &kp SPACE          &kp ENTER                 &kp SPACE        &kp BSPC         &kp BSPC       XXX           XXX
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
