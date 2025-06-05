@@ -125,7 +125,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', type: held}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -266,6 +266,9 @@ combos:
   l: [LAYER0]
 - p: [34, 35]
   k: {t: ']', s: '}'}
+  l: [LAYER0]
+- p: [34, 35, 36]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [LAYER0]
 - p: [28, 29]
   k: (
