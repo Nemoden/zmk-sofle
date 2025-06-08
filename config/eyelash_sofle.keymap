@@ -12,12 +12,20 @@
 #include <dt-bindings/zmk/outputs.h>
 #include "eyelash_sofle_keypos.h"
 
+#define _BASE 0
+#define _SYM 1
+#define _NAV 2
+#define _NUM 3
+#define _SYS 4
+
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
 #define ___ &trans
 #define XXX &none
+#define _UNREACHABLE_ &none
+#define _CUR_ &none
 
 &msc {
     acceleration-exponent = <1>;      // 0
@@ -121,7 +129,7 @@
         combo_enter {
             timeout-ms = <50>;
             key-positions = <34 35 36>; // jkl
-            layers = <0>;
+            layers = <0 1 2>;
             bindings = <&kp ENTER>;
         };
         combo_left_par {
@@ -275,39 +283,39 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer0 {
+        base {
             bindings = <
 XXX             XXX              XXX             XXX              XXX              XXX                &kp UP_ARROW             XXX              XXX              XXX            XXX           XXX           XXX
 &kp GRAVE       &kp Q            &kp W           &kp E            &kp R            &kp T              &kp DOWN_ARROW           &kp Y            &kp U            &kp I          &kp O         &kp P         &kp BSPC
-&one_shot_shift &kp A            &hl LCTRL S     &hl LALT D       &hl LGUI F       &kp G              &kp LEFT_ARROW           &kp H            &hr RGUI J       &hr RALT K     &hr RCTRL L   &kp SEMI      &hl RSHIFT APOS
-&kp LCTRL       &kp Z            &kp X           &kp C            &kp V            &kp B              &kp RIGHT_ARROW          &kp N            &kp M            &kp COMMA      &kp DOT       &kp SLASH     ___
-&kp C_MUTE      XXX              XXX             ___              &lt 1 TAB        &kp SPACE          &kp ENTER                &kp ENTER        &lt 2 BSPC       &kp ESC        XXX          XXX
+&tp LSHIFT ESC  &kp A            &hl LCTRL S     &hl LALT D       &hl LGUI F       &kp G              &kp LEFT_ARROW           &kp H            &hr RGUI J       &hr RALT K     &hr RCTRL L   &kp SEMI      &hr RSHIFT APOS
+&caps_word      &kp Z            &kp X           &kp C            &kp V            &kp B              &kp RIGHT_ARROW          &kp N            &kp M            &kp COMMA      &kp DOT       &kp SLASH     ___
+&kp C_MUTE      XXX              XXX             ___              &lt _SYM TAB     &kp SPACE          &kp ENTER                &kp ENTER        &lt _NAV BSPC    &tp RCTRL ESC  XXX           XXX
             >;
 
             sensor-bindings = <&encoder_tmux_window_nav>;
             display-name = "LAYER0";
         };
 
-        layer1 {
+        sym {
             bindings = <
 XXX             XXX              XXX             XXX              XXX              XXX                &macro_tmux_prev_pane     XXX              XXX              XXX            XXX           XXX           XXX
-&kp GRAVE       &kp EXCL         &kp AT          &kp HASH         &kp DOLLAR       &kp PERCENT        &macro_tmux_next_pane     &kp CARET        &kp AMPS         &kp STAR       ___           ___           &kp CAPSLOCK
-&tp RSHIFT ESC  ___              &kp LPAR        &kp MINUS        &kp PLUS         &kp RPAR           &macro_tmux_prev_window   &kp LT           &kp LBRC         &kp RBRC       &kp GT        &kp SEMI      &kp APOS
-&kp LCTRL       ___              ___             ___              ___              ___                &macro_tmux_next_window   &kp KP_EQUAL     &kp LBKT         &kp RBKT       &kp UNDER     &kp BSLH      &kp PIPE
-&kp C_MUTE      ___              ___             ___              &kp TAB          &kp SPACE          &kp ENTER                 &kp ENTER        &kp BSPC         &kp BSPC       XXX           XXX
+&kp GRAVE       &kp EXCL         &kp AT          &kp HASH         &kp DOLLAR       &kp PERCENT        &macro_tmux_next_pane     &kp CARET        &kp AMPS         &kp STAR       &kp UNDER     &kp PIPE      &kp CAPSLOCK
+&tp LSHIFT ESC  &kp GRAVE        &kp LPAR        &kp MINUS        &kp PLUS         &kp RPAR           &macro_tmux_prev_window   &kp LBKT         &kp LBRC         &kp RBRC       &kp RBKT      &kp SEMI      &tp RSHIFT APOS
+&kp LCTRL       ___              ___             ___              ___              ___                &macro_tmux_next_window   &kp KP_EQUAL     &kp LBKT         &kp LT         &kp GT        &kp BSLH      ___
+&kp C_MUTE      ___              ___             _UNREACHABLE_    _CUR_            _UNREACHABLE_      &kp ENTER                 &kp SPACE        &kp BSPC         &tp RCTRL ESC  XXX           XXX
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "SYM";
         };
 
-        layer_2 {
+        nav {
             bindings = <
 XXX             XXX              XXX             XXX              XXX              XXX                &kp UP_ARROW       XXX              XXX              XXX            XXX           XXX           XXX
 &kp GRAVE       &kp N1           &kp N2          &kp N3           &kp N4           &kp N5             &kp DOWN_ARROW     &kp N6           &kp N7           &kp N8         &kp N9        &kp N0        &kp CAPSLOCK
-&tp RSHIFT ESC  &msc SCRL_UP     &mmv MOVE_LEFT  &mmv MOVE_UP     &mmv MOVE_RIGHT  &kp PG_UP          &kp LEFT_ARROW     &kp LEFT         &kp DOWN         &kp UP         &kp RIGHT     ___           ___
-&kp LCTRL       &msc SCRL_DOWN   ___             &mmv MOVE_DOWN   ___              &kp PG_DN          &kp RIGHT_ARROW    ___              &mkp LCLK        &mkp MCLK      &mkp RCLK     ___           ___
-&kp C_MUTE      ___              ___             ___              &kp TAB          &kp SPACE          XXX                &kp ENTER        &kp BSPC         ___            &trans        ___
+&tp LSHIFT ESC  &msc SCRL_DOWN   &mmv MOVE_LEFT  &mmv MOVE_UP     &mmv MOVE_RIGHT  &kp PG_UP          &kp LEFT_ARROW     &kp LEFT         &kp DOWN         &kp UP         &kp RIGHT     ___           ___
+&kp LCTRL       &msc SCRL_UP     ___             &mmv MOVE_DOWN   ___              &kp PG_DN          &kp RIGHT_ARROW    ___              &mkp LCLK        &mkp MCLK      &mkp RCLK     ___           ___
+&kp C_MUTE      ___              ___             ___              &kp TAB          &kp SPACE          XXX                _UNREACHABLE_    _CUR_            _UNREACHABLE_  ___           ___
             >;
 
             sensor-bindings = <&encoder_chrome_tabs>;
