@@ -279,9 +279,9 @@
             bindings = <
 XXX             XXX              XXX             XXX              XXX              XXX                &kp UP_ARROW             XXX              XXX              XXX            XXX           XXX           XXX
 &kp GRAVE       &kp Q            &kp W           &kp E            &kp R            &kp T              &kp DOWN_ARROW           &kp Y            &kp U            &kp I          &kp O         &kp P         &kp BSPC
-&tp LSHIFT ESC  &kp A            &hl LCTRL S     &hl LALT D       &hl LGUI F       &kp G              &kp LEFT_ARROW           &kp H            &hr RGUI J       &hr RALT K     &hr RCTRL L   &kp SEMI      &hr RSHIFT APOS
-&caps_word      &kp Z            &kp X           &kp C            &kp V            &kp B              &kp RIGHT_ARROW          &kp N            &kp M            &kp COMMA      &kp DOT       &kp SLASH     ___
-&kp C_MUTE      XXX              XXX             &skq LSHIFT      &lt _SYM TAB     &kp SPACE          &kp ENTER                &kp ENTER        &lt _NAV BSPC    &tp RCTRL ESC  XXX           XXX
+&tp LSHIFT ESC  &kp A            &hl LCTRL S     &hl LALT D       &hl LGUI F       &kp G              &kp LEFT_ARROW           &kp H            &hr RGUI J       &hr LALT K     &hr RCTRL L   &kp SEMI      &hr RSHIFT APOS
+&caps_word      &kp Z            &kp X           &kp C            &kp V            &kp B              &kp RIGHT_ARROW          &kp N            &kp M            &kp COMMA      &kp DOT       &kp SLASH     &tog _NUM
+&kp C_MUTE      XXX              XXX             &tp RCTRL ESC    &lt _SYM BSPC    &kp SPACE          &kp ENTER                &kp ENTER        &lt _NAV TAB     &skq LSHIFT    XXX           XXX
             >;
 
             sensor-bindings = <&encoder_tmux_window_nav>;
@@ -293,7 +293,7 @@ XXX             XXX              XXX             XXX              XXX           
 XXX             XXX              XXX             XXX              XXX              XXX                &macro_tmux_prev_pane     XXX              XXX              XXX            XXX           XXX           XXX
 &kp GRAVE       &kp EXCL         &kp AT          &kp HASH         &kp DOLLAR       &kp PERCENT        &macro_tmux_next_pane     &kp CARET        &kp AMPS         &kp STAR       &kp UNDER     &kp PIPE      &kp CAPSLOCK
 &tp LSHIFT ESC  &kp GRAVE        &kp LPAR        &kp MINUS        &kp PLUS         &kp RPAR           &macro_tmux_prev_window   &kp LBKT         &kp LBRC         &kp RBRC       &kp RBKT      &kp SEMI      &tp RSHIFT APOS
-&kp LCTRL       ___              ___             ___              ___              ___                &macro_tmux_next_window   &kp KP_EQUAL     &kp LBKT         &kp LT         &kp GT        &kp BSLH      ___
+&kp LCTRL       ___              ___             ___              ___              ___                &macro_tmux_next_window   &kp KP_EQUAL     &kp LBKT         &kp LT         &kp GT        &kp BSLH      &tog _NUM
 &kp C_MUTE      ___              ___             _UNREACHABLE_    _CUR_            _UNREACHABLE_      &kp ENTER                 &kp SPACE        &kp BSPC         &tp RCTRL ESC  XXX           XXX
             >;
 
@@ -307,11 +307,35 @@ XXX             XXX              XXX             XXX              XXX           
 &kp GRAVE       &kp N1           &kp N2          &kp N3           &kp N4           &kp N5             &kp DOWN_ARROW     &kp N6           &kp N7           &kp N8         &kp N9        &kp N0        &kp CAPSLOCK
 &tp LSHIFT ESC  &msc SCRL_DOWN   &mmv MOVE_LEFT  &mmv MOVE_UP     &mmv MOVE_RIGHT  &kp PG_UP          &kp LEFT_ARROW     &kp LEFT         &kp DOWN         &kp UP         &kp RIGHT     ___           ___
 &kp LCTRL       &msc SCRL_UP     ___             &mmv MOVE_DOWN   ___              &kp PG_DN          &kp RIGHT_ARROW    ___              &mkp LCLK        &mkp MCLK      &mkp RCLK     ___           ___
-&kp C_MUTE      ___              ___             ___              &kp TAB          &kp SPACE          XXX                _UNREACHABLE_    _CUR_            _UNREACHABLE_  ___           ___
+&kp C_MUTE      ___              ___             ___              &kp LALT         &kp SPACE          XXX                _UNREACHABLE_    _CUR_            _UNREACHABLE_  ___           ___
             >;
 
             sensor-bindings = <&encoder_chrome_tabs>;
             display-name = "NAV";
+        };
+
+        // This layer is on toggle.
+        num {
+            bindings = <
+XXX             XXX              XXX             XXX              XXX              XXX                &kp UP_ARROW       XXX              XXX              XXX            XXX           XXX           XXX
+&kp GRAVE       ___              &kp N7           &kp N8          &kp N9           ___                &kp DOWN_ARROW     ___              ___              ___            ___           ___           &kp CAPSLOCK
+&tp LSHIFT ESC  ___              &kp N4           &kp N5          &kp N6           &kp N0             &kp LEFT_ARROW     ___              &kp MINUS        &kp PLUS       &kp EQUAL     ___           ___
+&kp LCTRL       ___              &kp N1           &kp N2          &kp N3           ___                &kp RIGHT_ARROW    ___              ___              &kp COMMA      &kp DOT       ___           &tog _NUM
+&kp C_MUTE      ___              ___             ___              &kp LSHIFT       &kp SPACE          XXX                &kp ENTER        &tog _NUM        _UNREACHABLE_  ___           ___
+            >;
+
+            sensor-bindings = <&encoder_chrome_tabs>;
+            display-name = "NAV";
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
         };
 
 //        layer1 {
@@ -341,14 +365,5 @@ XXX             XXX              XXX             XXX              XXX           
 //            sensor-bindings = <&scroll_encoder>;
 //        };
 
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
     };
 };
