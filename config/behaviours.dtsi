@@ -1,5 +1,3 @@
-include "eyelash_sofle_keypos.h"
-
 / {
   behaviors {
     tp: tap_preferred {
