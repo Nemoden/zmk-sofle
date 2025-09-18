@@ -45,7 +45,7 @@
       wait-ms = <10>;
       bindings = <&kp LC(TAB)>;
     };
-    macro_ctrlshifttab: macro_chrome_prev_tab { // Shift + Ctrl + TAB
+    macro_ctrlshifttab: macro_ctrl_shift_tab { // Shift + Ctrl + TAB
       compatible = "zmk,behavior-macro";
       label = "Ctrl + Shift + TAB";
       #binding-cells = <0>;
