@@ -8,6 +8,22 @@
       tap-ms = <30>;
       bindings = <&macro_tap &kp LC(A)>;
     };
+    macro_ctrlaz: macro_ctrl_a_z {
+      compatible = "zmk,behavior-macro";
+      //label = "{} + Return";
+      #binding-cells = <0>;
+      bindings
+      = <&macro_tap &kp LC(A) &kp Z>
+      ;
+    };
+    macro_ctrlax: macro_ctrl_a_x {
+      compatible = "zmk,behavior-macro";
+      //label = "{} + Return";
+      #binding-cells = <0>;
+      bindings
+      = <&macro_tap &kp LC(A) &kp X>
+      ;
+    };
     macro_ctrlq: ctrl_q { // Ctrl+Q
       compatible = "zmk,behavior-macro";
       //label = "Ctrl+Q";
@@ -16,7 +32,7 @@
       tap-ms = <30>;
       bindings = <&macro_tap &kp LC(Q)>;
     };
-    macro_cmdshiftspace: cmd_shift_space { // GUI + SHIFT + SPACE
+    macro_GS_space: cmd_shift_space { // GUI + SHIFT + SPACE
       compatible = "zmk,behavior-macro";
       //label = "Cmd + Shift + Space";
       #binding-cells = <0>;
@@ -27,7 +43,7 @@
       , <&macro_release &kp GUI>
       ;
     };
-    macro_cmdshiftj: cmd_shift_j { // GUI + SHIFT + J
+    macro_GS_j: cmd_shift_j { // GUI + SHIFT + J
       compatible = "zmk,behavior-macro";
       //label = "Cmd + Shift + J";
       #binding-cells = <0>;
@@ -38,14 +54,14 @@
       , <&macro_release &kp GUI>
       ;
     };
-    macro_ctrltab: macro_ctrl_tab { // Ctrl + TAB
+    macro_C_tab: macro_ctrl_tab { // Ctrl + TAB
       compatible = "zmk,behavior-macro";
       //label = "Ctrl + TAB";
       #binding-cells = <0>;
       wait-ms = <10>;
       bindings = <&kp LC(TAB)>;
     };
-    macro_ctrlshifttab: macro_ctrl_shift_tab { // Shift + Ctrl + TAB
+    macro_CS_tab: macro_ctrl_shift_tab { // Shift + Ctrl + TAB
       compatible = "zmk,behavior-macro";
       //label = "Ctrl + Shift + TAB";
       #binding-cells = <0>;

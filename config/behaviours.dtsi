@@ -58,7 +58,7 @@
       quick-release;
       ignore-modifiers;
     };
-    kp_sticky: kp_sticky {
+    sk_ht: sticky_key_hold_tap {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       flavor = "hold-preferred";
@@ -70,7 +70,7 @@
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp_sticky LSHIFT LSHIFT>, <&caps_word>;
+      bindings = <&sk_ht LSHIFT LSHIFT>, <&caps_word>;
     };
   };
 };

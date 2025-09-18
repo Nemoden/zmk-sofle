@@ -77,11 +77,11 @@ XXX             XXX              XXX             XXX              XXX           
 
         layer1 {
             bindings = <
-XXX             XXX              XXX             XXX              XXX              XXX                &macro_tmux_prev_pane     XXX              XXX              XXX            XXX           XXX           XXX
-&kp GRAVE       &kp EXCL         &kp AT          &kp HASH         &kp DOLLAR       &kp PERCENT        &macro_tmux_next_pane     &kp CARET        &kp AMPS         &kp STAR       _v_           _v_           &kp CAPSLOCK
-&tp RSHIFT ESC  _v_              &kp LPAR        &kp MINUS        &kp PLUS         &kp RPAR           &macro_tmux_prev_window   &kp LT           &kp LBRC         &kp RBRC       &kp GT        &kp SEMI      &kp APOS
-&kp LCTRL       _v_              _v_             _v_              _v_              _v_                &macro_tmux_next_window   &kp KP_EQUAL     &kp LBKT         &kp RBKT       &kp UNDER     &kp BSLH      &kp PIPE
-&kp C_MUTE      _v_              _v_             _v_              &kp TAB          &kp SPACE          &kp ENTER                 &kp ENTER        &kp BSPC         &kp BSPC       XXX           XXX
+XXX            XXX                XXX              XXX                  XXX              XXX                &macro_tmux_prev_pane     XXX              XXX              XXX            XXX           XXX           XXX
+_v_            &macro_ctrlq       &macro_ctrlw     &macro_GS_space      &macro_CS_tab    &macro_C_tab       &macro_tmux_next_pane     _v_              &kp MINUS        &kp PLUS       _v_           _v_           _v_
+_v_            &sk_ht LCTRL LCTRL &sk_ht LALT LALT &sk_ht LSHIFT LSHIFT &sk_ht LGUI LGUI &macro_ctrla       &macro_tmux_prev_window   &kp LEFT         &kp DOWN         &kp UP         &kp RIGHT     _v_           _v_
+_v_            &macro_ctrlaz      &macro_ctrlax    &macro_GS_j          _v_              _v_                &macro_tmux_next_window   _v_              _v_              _v_            _v_           _v_           _v_
+_v_            XXX                XXX              _v_                  &lt 1 SPACE      _v_                &kp ENTER                 _v_              _v_              _v_            XXX           XXX
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -94,7 +94,7 @@ XXX             XXX              XXX             XXX              XXX           
 &kp GRAVE       &kp N1           &kp N2          &kp N3           &kp N4           &kp N5             &kp DOWN_ARROW     &kp N6           &kp N7           &kp N8         &kp N9        &kp N0        &kp CAPSLOCK
 &tp RSHIFT ESC  &msc SCRL_UP     &mmv MOVE_LEFT  &mmv MOVE_UP     &mmv MOVE_RIGHT  &kp PG_UP          &kp LEFT_ARROW     &kp LEFT         &kp DOWN         &kp UP         &kp RIGHT     _v_           _v_
 &kp LCTRL       &msc SCRL_DOWN   _v_             &mmv MOVE_DOWN   _v_              &kp PG_DN          &kp RIGHT_ARROW    _v_              &mkp LCLK        &mkp MCLK      &mkp RCLK     _v_           _v_
-&kp C_MUTE      _v_              _v_             _v_              &kp TAB          &kp SPACE          XXX                &kp ENTER        &kp BSPC         _v_            &trans        _v_
+&kp C_MUTE      _v_              _v_             _v_              &kp TAB          &kp SPACE          XXX                _v_              &lt 2 TAB        _v_            XXX           XXX
             >;
 
             sensor-bindings = <&encoder_chrome_tabs>;
