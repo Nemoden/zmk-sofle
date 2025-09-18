@@ -11,8 +11,8 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/outputs.h>
 #include "eyelash_sofle_keypos.h"
-#include "behaviors.dsti"
-#include "macros.dsti"
+#include "behaviours.dtsi"
+#include "macros.dtsi"
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
