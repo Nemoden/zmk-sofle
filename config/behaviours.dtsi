@@ -58,18 +58,18 @@
       quick-release;
       ignore-modifiers;
     };
-    one_shot_shift: one_shot_or_hold_shift {
+    kp_sticky: kp_sticky {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       flavor = "hold-preferred";
       tapping-term-ms = <180>;
       quick-tap-ms = <125>;
-      bindings = <&kp LSHIFT>, <&sk LSHIFT>;
+      bindings = <&kp>, <&sk>;
     };
     ss_cw: shift_caps_word {
       compatible = "zmk,behavior-tap-dance";
       tapping-term-ms = <200>;
-      bindings = <&one_shot_shift>, <&caps_word>;
+      bindings = <&kp_sticky LSHIFT LSHIFT>, <&caps_word>;
     };
   };
 };
