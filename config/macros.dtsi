@@ -2,7 +2,7 @@
   macros {
     macro_ctrla: ctrl_a { // Ctrl+A
       compatible = "zmk,behavior-macro";
-      label = "Ctrl+A";
+      //label = "Ctrl+A";
       #binding-cells = <0>;
       wait-ms = <30>;
       tap-ms = <30>;
@@ -10,7 +10,7 @@
     };
     macro_ctrlq: ctrl_q { // Ctrl+Q
       compatible = "zmk,behavior-macro";
-      label = "Ctrl+Q";
+      //label = "Ctrl+Q";
       #binding-cells = <0>;
       wait-ms = <30>;
       tap-ms = <30>;
@@ -18,7 +18,7 @@
     };
     macro_cmdshiftspace: cmd_shift_space { // GUI + SHIFT + SPACE
       compatible = "zmk,behavior-macro";
-      label = "Cmd + Shift + Space";
+      //label = "Cmd + Shift + Space";
       #binding-cells = <0>;
       wait-ms = <10>;
       bindings
@@ -29,7 +29,7 @@
     };
     macro_cmdshiftj: cmd_shift_j { // GUI + SHIFT + J
       compatible = "zmk,behavior-macro";
-      label = "Cmd + Shift + J";
+      //label = "Cmd + Shift + J";
       #binding-cells = <0>;
       wait-ms = <10>;
       bindings
@@ -40,14 +40,14 @@
     };
     macro_ctrltab: macro_ctrl_tab { // Ctrl + TAB
       compatible = "zmk,behavior-macro";
-      label = "Ctrl + TAB";
+      //label = "Ctrl + TAB";
       #binding-cells = <0>;
       wait-ms = <10>;
       bindings = <&kp LC(TAB)>;
     };
     macro_ctrlshifttab: macro_ctrl_shift_tab { // Shift + Ctrl + TAB
       compatible = "zmk,behavior-macro";
-      label = "Ctrl + Shift + TAB";
+      //label = "Ctrl + Shift + TAB";
       #binding-cells = <0>;
       wait-ms = <10>;
       bindings
@@ -58,7 +58,7 @@
     };
     macro_ctrlw: ctrl_w { // Ctrl+Q
       compatible = "zmk,behavior-macro";
-      label = "Ctrl+W";
+      //label = "Ctrl+W";
       #binding-cells = <0>;
       wait-ms = <30>;
       tap-ms = <30>;
@@ -66,7 +66,7 @@
     };
     macro_tmux_prefix: macro_tmux_prefix { // Ctrl+A
       compatible = "zmk,behavior-macro";
-      label = "Tmux Prefix";
+      //label = "Tmux Prefix";
       #binding-cells = <0>;
       wait-ms = <30>;
       tap-ms = <30>;
@@ -74,7 +74,7 @@
     };
     macro_tmux_next_window: macro_tmux_next_window { // Ctrl+A + N
       compatible = "zmk,behavior-macro";
-      label = "Next Tmux Window";
+      //label = "Next Tmux Window";
       #binding-cells = <0>;
       wait-ms = <10>;
       bindings
@@ -84,7 +84,7 @@
     };
     macro_tmux_prev_window: macro_tmux_prev_window { // Ctrl+A + P
       compatible = "zmk,behavior-macro";
-      label = "Previous Tmux Window";
+      //label = "Previous Tmux Window";
       #binding-cells = <0>;
       wait-ms = <10>;
       bindings
@@ -94,7 +94,7 @@
     };
     macro_tmux_cmd: macro_tmux_cmd { // Ctrl+A + :
       compatible = "zmk,behavior-macro";
-      label = "Tmux Command";
+      //label = "Tmux Command";
       #binding-cells = <0>;
       wait-ms = <10>;
       bindings
@@ -104,7 +104,7 @@
     };
     macro_tmux_next_pane: macro_tmux_next_pane { // Ctrl+A + O
       compatible = "zmk,behavior-macro";
-      label = "Tmux Next Pane";
+      //label = "Tmux Next Pane";
       #binding-cells = <0>;
       bindings
       = <&macro_tap &kp LC(A)>
@@ -113,7 +113,7 @@
     };
     macro_tmux_zoom: macro_tmux_zoom { // Ctrl+A + z
       compatible = "zmk,behavior-macro";
-      label = "Tmux Zoom";
+      //label = "Tmux Zoom";
       #binding-cells = <0>;
       bindings
       = <&macro_tap &kp LC(A)>
@@ -122,7 +122,7 @@
     };
     macro_tmux_close: macro_tmux_close { // Ctrl+A + x
       compatible = "zmk,behavior-macro";
-      label = "Tmux Close";
+      //label = "Tmux Close";
       #binding-cells = <0>;
       bindings
       = <&macro_tap &kp LC(A)>
@@ -131,7 +131,7 @@
     };
     macro_tmux_new: macro_tmux_new { // Ctrl+A + C
       compatible = "zmk,behavior-macro";
-      label = "Tmux New Window";
+      //label = "Tmux New Window";
       #binding-cells = <0>;
       bindings
       = <&macro_tap &kp LC(A)>
@@ -141,7 +141,7 @@
     // There is no inverse for <Prefix o> in TMUX, so we do this instead :select-pane -t :.- followed by an ENTER
     macro_tmux_prev_pane: macro_tmux_prev_pane {
       compatible = "zmk,behavior-macro";
-      label = "Tmux Previous Pane";
+      //label = "Tmux Previous Pane";
       wait-ms = <0>;
       tap-ms = <0>;
       #binding-cells = <0>;
@@ -154,14 +154,14 @@
     };
     macro_chrome_next_tab: macro_chrome_next_tab { // Ctrl + TAB
       compatible = "zmk,behavior-macro";
-      label = "MacOS Chrome Next Tab";
+      //label = "MacOS Chrome Next Tab";
       #binding-cells = <0>;
       wait-ms = <10>;
       bindings = <&kp LC(TAB)>;
     };
     macro_chrome_prev_tab: macro_chrome_prev_tab { // Shift + Ctrl + TAB
       compatible = "zmk,behavior-macro";
-      label = "MacOS Chrome Previous Tab";
+      //label = "MacOS Chrome Previous Tab";
       #binding-cells = <0>;
       wait-ms = <10>;
       bindings
@@ -172,7 +172,7 @@
     };
     macro_plus_eq: macro_plus_equal {
       compatible = "zmk,behavior-macro";
-      label = "+=";
+      //label = "+=";
       #binding-cells = <0>;
       bindings
       = <&macro_tap &kp PLUS &kp EQUAL>
@@ -180,7 +180,7 @@
     };
     macro_minus_eq: macro_minus_equal {
       compatible = "zmk,behavior-macro";
-      label = "-=";
+      //label = "-=";
       #binding-cells = <0>;
       bindings
       = <&macro_tap &kp MINUS &kp EQUAL>
@@ -188,7 +188,7 @@
     };
     macro_plus_plus: macro_plus_plus {
       compatible = "zmk,behavior-macro";
-      label = "++";
+      //label = "++";
       #binding-cells = <0>;
       bindings
       = <&macro_tap &kp PLUS &kp PLUS>
@@ -196,7 +196,7 @@
     };
     macro_minus_minus: macro_minus_minus {
       compatible = "zmk,behavior-macro";
-      label = "--";
+      //label = "--";
       #binding-cells = <0>;
       bindings
       = <&macro_tap &kp MINUS &kp MINUS>
@@ -204,7 +204,7 @@
     };
     macro_eq_eq: macro_equal_equal {
       compatible = "zmk,behavior-macro";
-      label = "==";
+      //label = "==";
       #binding-cells = <0>;
       bindings
       = <&macro_tap &kp EQUAL &kp EQUAL>
@@ -212,7 +212,7 @@
     };
     macro_eq_eq_eq: macro_equal_equal_equal {
       compatible = "zmk,behavior-macro";
-      label = "===";
+      //label = "===";
       #binding-cells = <0>;
       bindings
       = <&macro_tap &kp EQUAL &kp EQUAL &kp EQUAL>
@@ -220,7 +220,7 @@
     };
     macro_ne_eq: macro_not_equal {
       compatible = "zmk,behavior-macro";
-      label = "!=";
+      //label = "!=";
       #binding-cells = <0>;
       bindings
       = <&macro_tap &kp EXCLAMATION &kp EQUAL>
@@ -228,7 +228,7 @@
     };
     macro_ne_eq_eq: macro_not_equal_equal {
       compatible = "zmk,behavior-macro";
-      label = "!==";
+      //label = "!==";
       #binding-cells = <0>;
       bindings
       = <&macro_tap &kp EXCLAMATION &kp EQUAL &kp EQUAL>
@@ -236,7 +236,7 @@
     };
     macro_quotes: macro_quotes_and_position_inside {
       compatible = "zmk,behavior-macro";
-      label = "Quotes and position cursor inside";
+      //label = "Quotes and position cursor inside";
       #binding-cells = <0>;
       bindings
       = <&macro_tap &kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp LEFT_ARROW>
@@ -244,7 +244,7 @@
     };
     macro_apos: macro_apos_and_position_inside {
       compatible = "zmk,behavior-macro";
-      label = "Apos and position cursor inside";
+      //label = "Apos and position cursor inside";
       #binding-cells = <0>;
       bindings
       = <&macro_tap &kp APOSTROPHE &kp APOSTROPHE &kp LEFT_ARROW>
@@ -252,7 +252,7 @@
     };
     macro_paren: macro_parenthesis_and_position_inside {
       compatible = "zmk,behavior-macro";
-      label = "()";
+      //label = "()";
       #binding-cells = <0>;
       bindings
       = <&macro_tap &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>
@@ -260,7 +260,7 @@
     };
     macro_paren_enter: macro_parenthesis_position_inside_and_hit_return {
       compatible = "zmk,behavior-macro";
-      label = "() + Return";
+      //label = "() + Return";
       #binding-cells = <0>;
       bindings
       = <&macro_tap &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW &kp ENTER>
@@ -268,7 +268,7 @@
     };
     macro_squigly: macro_squigly_and_position_inside {
       compatible = "zmk,behavior-macro";
-      label = "{}";
+      //label = "{}";
       #binding-cells = <0>;
       bindings
       = <&macro_tap &kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT_ARROW>
@@ -276,7 +276,7 @@
     };
     macro_squigly_enter: macro_squigly_position_inside_and_return {
       compatible = "zmk,behavior-macro";
-      label = "{} + Return";
+      //label = "{} + Return";
       #binding-cells = <0>;
       bindings
       = <&macro_tap &kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT_ARROW &kp ENTER>
@@ -284,7 +284,7 @@
     };
     macro_protocol: macro_protocol {
       compatible = "zmk,behavior-macro";
-      label = "://";
+      //label = "://";
       #binding-cells = <0>;
       bindings
       = <&macro_tap &kp COLON &kp SLASH &kp SLASH>
