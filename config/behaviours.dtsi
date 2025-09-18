@@ -39,7 +39,7 @@
       hold-trigger-on-release;
       bindings = <&kp>, <&kp>;
     };
-    hmr: homrow_left {
+    hmr: homrow_right {
       compatible = "zmk,behavior-hold-tap";
       flavor = "balanced";
       tapping-term-ms = <280>;
