@@ -68,6 +68,7 @@
     };
     ss_cw: shift_caps_word {
       compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp_sticky LSHIFT LSHIFT>, <&caps_word>;
     };
