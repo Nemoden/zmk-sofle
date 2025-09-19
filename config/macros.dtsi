@@ -36,26 +36,28 @@
       compatible = "zmk,behavior-macro";
       //label = "Cmd + Shift + Space";
       #binding-cells = <0>;
-      wait-ms = <10>;
+      wait-ms = <30>;
+      tap-ms = <30>;
       bindings
-      = <&macro_press &kp GUI>
+      = <&macro_press &kp LGUI>
       , <&macro_press &kp LSHIFT>
       , <&macro_tap &kp SPACE>
       , <&macro_release &kp LSHIFT>
-      , <&macro_release &kp GUI>
+      , <&macro_release &kp LGUI>
       ;
     };
     macro_GS_j: cmd_shift_j { // GUI + SHIFT + J
       compatible = "zmk,behavior-macro";
       //label = "Cmd + Shift + J";
       #binding-cells = <0>;
-      wait-ms = <10>;
+      wait-ms = <30>;
+      tap-ms = <30>;
       bindings
-      = <&macro_press &kp GUI>
+      = <&macro_press &kp LGUI>
       , <&macro_press &kp LSHIFT>
       , <&macro_tap &kp J>
       , <&macro_release &kp LSHIFT>
-      , <&macro_release &kp GUI>
+      , <&macro_release &kp LGUI>
       ;
     };
     macro_C_tab: macro_ctrl_tab { // Ctrl + TAB
