@@ -39,7 +39,9 @@
       wait-ms = <10>;
       bindings
       = <&macro_press &kp GUI>
-      , <&macro_tap &kp LS(SPACE)>
+      , <&macro_press &kp LSHIFT>
+      , <&macro_tap &kp SPACE>
+      , <&macro_release &kp LSHIFT>
       , <&macro_release &kp GUI>
       ;
     };
@@ -50,7 +52,9 @@
       wait-ms = <10>;
       bindings
       = <&macro_press &kp GUI>
-      , <&macro_tap &kp LS(J)>
+      , <&macro_press &kp LSHIFT>
+      , <&macro_tap &kp J>
+      , <&macro_release &kp LSHIFT>
       , <&macro_release &kp GUI>
       ;
     };
