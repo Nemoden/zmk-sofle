@@ -71,11 +71,11 @@
 
         layer0 {
             bindings = <
-XXX             XXX              XXX             XXX              XXX              XXX                &kp UP_ARROW             XXX              XXX              XXX            XXX           XXX           XXX
-&kp GRAVE       &kp Q            &kp W           &kp E            &kp R            &kp T              &kp DOWN_ARROW           &kp Y            &kp U            &kp I          &kp O         &kp P         &kp BACKSPACE
-&ss_cw          &kp A            &kp S           &kp D            &kp F            &kp G              &kp LEFT_ARROW           &kp H            &kp J            &kp K          &kp L         &kp SEMI      &hml RSHIFT APOS
-&kp LCTRL       &kp Z            &kp X           &kp C            &kp V            &kp B              &kp RIGHT_ARROW          &kp N            &kp M            &kp COMMA      &kp DOT       &kp SLASH     &kp ENTER
-&kp C_MUTE      XXX              XXX             &kp HYPER        &lt 1 SPACE      &tp LALT GRAVE     &kp ENTER                &tp LGUI ESC     &lt 2 TAB        &kp RCTRL      XXX           XXX
+XXX                       XXX              XXX             XXX              XXX              XXX                &kp UP_ARROW             XXX              XXX              XXX            XXX           XXX           XXX
+&kp GRAVE                 &kp Q            &kp W           &kp E            &kp R            &kp T              &kp DOWN_ARROW           &kp Y            &kp U            &kp I          &kp O         &kp P         &kp BACKSPACE
+&htd_supershift LSHIFT 0  &kp A            &kp S           &kp D            &kp F            &kp G              &kp LEFT_ARROW           &kp H            &kp J            &kp K          &kp L         &kp SEMI      &hmr RSHIFT APOS
+&kp LCTRL                 &kp Z            &kp X           &kp C            &kp V            &kp B              &kp RIGHT_ARROW          &kp N            &kp M            &kp COMMA      &kp DOT       &kp SLASH     &kp ENTER
+&kp C_MUTE                XXX              XXX             &kp HYPER        &lt 1 SPACE      &tp LALT GRAVE     &kp ENTER                &tp LGUI ESC     &lt 2 TAB        &kp RCTRL      XXX           XXX
             >;
 
             sensor-bindings = <&encoder_tmux_window_nav>;
@@ -98,8 +98,8 @@ _v_            XXX                XXX              _v_                  &lt 1 SP
         layer_2 {
             bindings = <
 XXX            XXX                XXX              XXX                  XXX               XXX                &kp UP_ARROW          XXX              XXX              XXX            XXX           XXX           XXX
-_v_            &macro_ne_eq       &macro_ctrlw     &kp LEFT_BRACE       &kp RIGHT_BRACE   &td_squigly        &kp DOWN_ARROW        &kp HASH         &kp N7           &kp N8         &kp N9        _v_           _v_
-_v_            &kp MINUS          &kp PLUS         &kp LEFT_BRACKET     &kp RIGHT_BRACKET &td_bracket        &kp LEFT_ARROW        &kp COLON        &kp N4           &kp N5         &kp N6        &kp N0        &td_apos
+_v_            &macro_ne_eq       &kp EQUAL        &kp LEFT_BRACE       &kp RIGHT_BRACE   &td_squigly        &kp DOWN_ARROW        &kp HASH         &kp N7           &kp N8         &kp N9        &kp COLON     _v_
+_v_            &kp MINUS          &kp PLUS         &kp LEFT_BRACKET     &kp RIGHT_BRACKET &td_bracket        &kp LEFT_ARROW        &kp UNDER        &kp N4           &kp N5         &kp N6        &kp N0        &td_apos
 _v_            &macro_minus_gt    &macro_protocol  &kp LPAR             &kp RPAR          &macro_paren       &kp RIGHT_ARROW       &kp BACKSLASH    &kp N1           &kp N2         &kp N3        &kp SLASH     _v_
 _v_            XXX                XXX              _v_                  _v_               _v_                &kp ENTER             _v_              &lt 2 TAB        _v_            XXX           XXX
             >;
