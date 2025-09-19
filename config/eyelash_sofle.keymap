@@ -75,7 +75,7 @@ XXX                       XXX              XXX             XXX              XXX 
 &kp GRAVE                 &kp Q            &kp W           &kp E            &kp R            &kp T              &kp DOWN_ARROW           &kp Y            &kp U            &kp I          &kp O         &kp P         &kp BACKSPACE
 &htd_supershift LSHIFT 0  &kp A            &kp S           &kp D            &kp F            &kp G              &kp LEFT_ARROW           &kp H            &kp J            &kp K          &kp L         &kp SEMI      &hmr RSHIFT APOS
 &kp LCTRL                 &kp Z            &kp X           &kp C            &kp V            &kp B              &kp RIGHT_ARROW          &kp N            &kp M            &kp COMMA      &kp DOT       &kp SLASH     &kp ENTER
-&kp C_MUTE                XXX              XXX             &kp HYPER        &lt 1 SPACE      &tp LALT GRAVE     &kp ENTER                &tp LGUI ESC     &lt 2 TAB        &kp RCTRL      XXX           XXX
+&kp C_MUTE                XXX              XXX             &kp HYPER        &lt 1 SPACE      &tp LALT GRAVE     &kp ENTER                &tp LGUI ESC     &lt 2 BACKSPACE  &kp RCTRL      XXX           XXX
             >;
 
             sensor-bindings = <&encoder_tmux_window_nav>;
@@ -86,9 +86,9 @@ XXX                       XXX              XXX             XXX              XXX 
             bindings = <
 XXX            XXX                XXX              XXX                  XXX              XXX                &macro_tmux_prev_pane     XXX              XXX              XXX            XXX           XXX           XXX
 _v_            &macro_ctrlq       &macro_ctrlw     &macro_GS_space      &macro_CS_tab    &macro_C_tab       &macro_tmux_next_pane     &kp PG_UP        &kp MINUS        &kp PLUS       _v_           _v_           _v_
-_v_            &sk_ht LCTRL LCTRL &sk_ht LALT LALT &sk_ht LSHIFT LSHIFT &sk_ht LGUI LGUI &macro_ctrla       &macro_tmux_prev_window   &kp LEFT         &kp DOWN         &kp UP         &kp RIGHT     _v_           _v_
+&caps_word     &sk_ht LCTRL LCTRL &sk_ht LALT LALT &sk_ht LSHIFT LSHIFT &sk_ht LGUI LGUI &macro_ctrla       &macro_tmux_prev_window   &kp LEFT         &kp DOWN         &kp UP         &kp RIGHT     _v_           _v_
 _v_            &macro_ctrlaz      &macro_ctrlax    &macro_GS_j          _v_              _v_                &macro_tmux_next_window   &kp PG_DN        _v_              _v_            _v_           _v_           _v_
-_v_            XXX                XXX              _v_                  &lt 1 SPACE      _v_                &kp ENTER                 &kp SPACE        _v_              _v_            XXX           XXX
+_v_            XXX                XXX              _v_                  &lt 1 SPACE      _v_                &kp ENTER                 &kp SPACE        &lt 2 ENTER      &kp TAB        XXX           XXX
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -101,7 +101,7 @@ XXX            XXX                XXX              XXX                  XXX     
 _v_            &macro_ne_eq       &kp EQUAL        &kp LEFT_BRACE       &kp RIGHT_BRACE   &td_squigly        &kp DOWN_ARROW        &kp HASH         &kp N7           &kp N8         &kp N9        &kp COLON     _v_
 _v_            &kp MINUS          &kp PLUS         &kp LEFT_BRACKET     &kp RIGHT_BRACKET &td_bracket        &kp LEFT_ARROW        &kp UNDER        &kp N4           &kp N5         &kp N6        &kp N0        &td_apos
 _v_            &macro_minus_gt    &macro_protocol  &kp LPAR             &kp RPAR          &macro_paren       &kp RIGHT_ARROW       &kp BACKSLASH    &kp N1           &kp N2         &kp N3        &kp SLASH     _v_
-_v_            XXX                XXX              _v_                  _v_               _v_                &kp ENTER             _v_              &lt 2 TAB        _v_            XXX           XXX
+_v_            XXX                XXX              _v_                  _v_               _v_                &kp ENTER             _v_              &lt 2 BACKSPACE  _v_            XXX           XXX
             >;
 
             sensor-bindings = <&encoder_chrome_tabs>;
