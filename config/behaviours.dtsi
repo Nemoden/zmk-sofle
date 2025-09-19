@@ -58,6 +58,20 @@
       quick-release;
       ignore-modifiers;
     };
+    td_supershift: td_supershift {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&sk LSHIFT>, <&caps_word>;
+    };
+    htd_supershift: htd_supershift {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      flavor = "hold-preferred";
+      tapping-term-ms = <180>;
+      quick-tap-ms = <125>;
+      bindings = <&kp>, <&td_supershift>;
+    };
     sk_ht: sticky_key_hold_tap {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
