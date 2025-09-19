@@ -37,6 +37,13 @@
 
 
 / {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
@@ -78,63 +85,40 @@ XXX             XXX              XXX             XXX              XXX           
         layer1 {
             bindings = <
 XXX            XXX                XXX              XXX                  XXX              XXX                &macro_tmux_prev_pane     XXX              XXX              XXX            XXX           XXX           XXX
-_v_            &macro_ctrlq       &macro_ctrlw     &macro_GS_space      &macro_CS_tab    &macro_C_tab       &macro_tmux_next_pane     _v_              &kp MINUS        &kp PLUS       _v_           _v_           _v_
+_v_            &macro_ctrlq       &macro_ctrlw     &macro_GS_space      &macro_CS_tab    &macro_C_tab       &macro_tmux_next_pane     &kp PG_UP        &kp MINUS        &kp PLUS       _v_           _v_           _v_
 _v_            &sk_ht LCTRL LCTRL &sk_ht LALT LALT &sk_ht LSHIFT LSHIFT &sk_ht LGUI LGUI &macro_ctrla       &macro_tmux_prev_window   &kp LEFT         &kp DOWN         &kp UP         &kp RIGHT     _v_           _v_
-_v_            &macro_ctrlaz      &macro_ctrlax    &macro_GS_j          _v_              _v_                &macro_tmux_next_window   _v_              _v_              _v_            _v_           _v_           _v_
-_v_            XXX                XXX              _v_                  &lt 1 SPACE      _v_                &kp ENTER                 _v_              _v_              _v_            XXX           XXX
+_v_            &macro_ctrlaz      &macro_ctrlax    &macro_GS_j          _v_              _v_                &macro_tmux_next_window   &kp PG_DN        _v_              _v_            _v_           _v_           _v_
+_v_            XXX                XXX              _v_                  &lt 1 SPACE      _v_                &kp ENTER                 &kp SPACE        _v_              _v_            XXX           XXX
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            display-name = "SYM";
+            display-name = "CHORD-NAV";
         };
 
         layer_2 {
             bindings = <
-XXX             XXX              XXX             XXX              XXX              XXX                &kp UP_ARROW       XXX              XXX              XXX            XXX           XXX           XXX
-&kp GRAVE       &kp N1           &kp N2          &kp N3           &kp N4           &kp N5             &kp DOWN_ARROW     &kp N6           &kp N7           &kp N8         &kp N9        &kp N0        &kp CAPSLOCK
-&tp RSHIFT ESC  &msc SCRL_UP     &mmv MOVE_LEFT  &mmv MOVE_UP     &mmv MOVE_RIGHT  &kp PG_UP          &kp LEFT_ARROW     &kp LEFT         &kp DOWN         &kp UP         &kp RIGHT     _v_           _v_
-&kp LCTRL       &msc SCRL_DOWN   _v_             &mmv MOVE_DOWN   _v_              &kp PG_DN          &kp RIGHT_ARROW    _v_              &mkp LCLK        &mkp MCLK      &mkp RCLK     _v_           _v_
-&kp C_MUTE      _v_              _v_             _v_              &kp TAB          &kp SPACE          XXX                _v_              &lt 2 TAB        _v_            XXX           XXX
+XXX            XXX                XXX              XXX                  XXX               XXX                &kp UP_ARROW          XXX              XXX              XXX            XXX           XXX           XXX
+_v_            &macro_ne_eq       &macro_ctrlw     &kp LEFT_BRACE       &kp RIGHT_BRACE   &td_squigly        &kp DOWN_ARROW        &kp HASH         &kp N7           &kp N8         &kp N9        _v_           _v_
+_v_            &kp MINUS          &kp PLUS         &kp LEFT_BRACKET     &kp RIGHT_BRACKET &td_bracket        &kp LEFT_ARROW        &kp COLON        &kp N4           &kp N5         &kp N6        &kp N0        &td_apos
+_v_            &macro_minus_gt    &macro_protocol  &kp LPAR             &kp RPAR          &macro_paren       &kp RIGHT_ARROW       &kp BACKSLASH    &kp N1           &kp N2         &kp N3        &kp SLASH     _v_
+_v_            XXX                XXX              _v_                  _v_               _v_                &kp ENTER             _v_              &lt 2 TAB        _v_            XXX           XXX
             >;
 
             sensor-bindings = <&encoder_chrome_tabs>;
-            display-name = "NAV";
+            display-name = "SYN-NUM";
         };
-
-//        layer1 {
-//            bindings = <
-//&kp ESC         &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP       &kp F6           &kp F7           &kp F8         &kp F9        &kp F10       &trans
-//&trans          &kp GRAVE        &mkp LCLK       &kp UP           &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN     &kp PG_UP        &kp LBKT         &kp UP         &kp RBKT      &kp MINUS     &kp EQUAL
-//&trans          &kp TILDE        &kp LEFT        &kp DOWN         &kp RIGHT        &mkp MB5           &mmv MOVE_LEFT     &kp PG_DN        &kp LBRC         &kp DOWN       &kp RBRC      &kp UNDER     &kp PLUS
-//&trans          &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT    &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT     &kp F11       &kp F12       &trans
-//&kp C_MUTE      &trans           &trans          &trans           &trans           &trans             &mkp LCLK          &trans           &trans           &trans         &trans        &trans
-//            >;
-
-
-//            sensor-bindings = <&scroll_encoder>;
-//            display-name = "LAYER1";
-//        };
-
-
-//        layer_2 {
-//            bindings = <
-//&kp TILDE       &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4       &mmv MOVE_UP       &kp F6           &kp F7           &kp F8           &kp F9        &kp F10     &trans
-//&trans          &bt BT_CLR       &bt BT_CLR_ALL  &trans           &trans           &trans             &mmv MOVE_DOWN     &trans           &trans           &kp F11          &kp F12       &kp UNDER   &kp PLUS
-//&trans          &out OUT_USB     &out OUT_BLE    &trans           &trans           &trans             &mmv MOVE_LEFT     &trans           &trans           &trans           &trans        &kp LBRC    &kp RBRC
-//&trans          &sys_reset       &trans          &bootloader      &trans           &trans             &mmv MOVE_RIGHT    &trans           &trans           &sys_reset       &soft_off     &bootloader &trans
-//&trans          &trans           &trans          &trans           &trans           &trans             &mkp LCLK          &trans           &trans           &trans           &trans        &trans
-//            >;
-
-//            sensor-bindings = <&scroll_encoder>;
-//        };
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+XXX            XXX                XXX              XXX                  XXX               XXX                &kp UP_ARROW          XXX              XXX              XXX            XXX           XXX           XXX
+_v_            &bt BT_CLR_ALL     &bt BT_CLR       _v_                  _v_               _v_                &kp DOWN_ARROW        _v_              _v_              _v_            _v_           _v_           _v_
+_v_            _v_                _v_              _v_                  _v_               _v_                &kp LEFT_ARROW        _v_              &td_bt3          &td_bt4        _v_           _v_           _v_
+_v_            _v_                _v_              _v_                  _v_               _v_                &kp RIGHT_ARROW       _v_              &td_bt0          &td_bt1        &td_bt2       _v_           _v_
+_v_            XXX                XXX              _v_                  &lt 1 SPACE       _v_                &kp ENTER             _v_              &lt 2 TAB        _v_            XXX           XXX
+            >;
+
+            sensor-bindings = <&encoder_chrome_tabs>;
+            display-name = "SYSTEM";
             >;
         };
     };

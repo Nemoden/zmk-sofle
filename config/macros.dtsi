@@ -274,14 +274,6 @@
       = <&macro_tap &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>
       ;
     };
-    macro_paren_enter: macro_paren_enter {
-      compatible = "zmk,behavior-macro";
-      //label = "() + Return";
-      #binding-cells = <0>;
-      bindings
-      = <&macro_tap &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW &kp ENTER>
-      ;
-    };
     macro_squigly: macro_squigly {
       compatible = "zmk,behavior-macro";
       //label = "{}";
@@ -298,12 +290,36 @@
       = <&macro_tap &kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT_ARROW &kp ENTER>
       ;
     };
+    macro_bracket: macro_bracket {
+      compatible = "zmk,behavior-macro";
+      //label = "{}";
+      #binding-cells = <0>;
+      bindings
+      = <&macro_tap &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW>
+      ;
+    };
+    macro_bracket_enter: macro_bracket {
+      compatible = "zmk,behavior-macro";
+      //label = "{}";
+      #binding-cells = <0>;
+      bindings
+      = <&macro_tap &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW &kp ENTER>
+      ;
+    };
     macro_protocol: macro_protocol {
       compatible = "zmk,behavior-macro";
       //label = "://";
       #binding-cells = <0>;
       bindings
       = <&macro_tap &kp COLON &kp SLASH &kp SLASH>
+      ;
+    };
+    macro_minus_gt: macro_minus_gt {
+      compatible = "zmk,behavior-macro";
+      //label = "://";
+      #binding-cells = <0>;
+      bindings
+      = <&macro_tap &kp MINUS &kp GREATER_THAN>
       ;
     };
   };

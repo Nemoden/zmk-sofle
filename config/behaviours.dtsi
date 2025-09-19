@@ -72,5 +72,53 @@
       tapping-term-ms = <200>;
       bindings = <&sk_ht LSHIFT LSHIFT>, <&caps_word>;
     };
+    td_squigly: td_squigly {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&macro_squigly>, <&macro_squigly_enter>;
+    };
+    td_bracket: td_bracket {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&macro_bracket>, <&macro_bracket_enter>;
+    };
+    td_apos: td_apos {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&macro_quotes>, <&macro_apos>;
+    };
+    td_bt0: td_bt0 {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&bt BT_SEL 0>, <&bt BT_DISC 0>;
+    };
+    td_bt1: td_bt1 {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&bt BT_SEL 1>, <&bt BT_DISC 1>;
+    };
+    td_bt2: td_bt2 {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&bt BT_SEL 2>, <&bt BT_DISC 2>;
+    };
+    td_bt3: td_bt3 {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&bt BT_SEL 3>, <&bt BT_DISC 3>;
+    };
+    td_bt4: td_bt4 {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&bt BT_SEL 4>, <&bt BT_DISC 4>;
+    };
   };
 };
