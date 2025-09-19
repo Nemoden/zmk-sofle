@@ -119,7 +119,6 @@ _v_            XXX                XXX              _v_                  &lt 1 SP
 
             sensor-bindings = <&encoder_chrome_tabs>;
             display-name = "SYSTEM";
-            >;
         };
     };
 };
