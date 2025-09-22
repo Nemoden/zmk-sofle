@@ -89,8 +89,8 @@ layers:
   - PG UP
   - {t: '-', s: _}
   - +
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '|'
+  - _
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:alpha-w-box$$
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:apple-keyboard-control$$'}
