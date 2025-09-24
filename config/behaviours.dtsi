@@ -56,7 +56,7 @@
       bindings = <&kp>;
       release-after-ms = <1000>;
       quick-release;
-      ignore-modifiers;
+      /delete-property/ ignore-modifiers;
     };
     td_supershift: td_supershift {
       compatible = "zmk,behavior-tap-dance";
