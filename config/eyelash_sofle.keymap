@@ -87,7 +87,7 @@ XXX                       XXX              XXX             XXX              XXX 
 XXX            XXX                XXX              XXX                  XXX              XXX                &macro_tmux_prev_pane     XXX              XXX              XXX            XXX           XXX           XXX
 _v_            &macro_ctrlq       &macro_ctrlw     &macro_GS_space      &macro_CS_tab    &macro_C_tab       &macro_tmux_next_pane     &kp PG_UP        &kp MINUS        &kp PLUS       &kp LBKT      &kp RBKT      _v_
 &caps_word     &sk LCTRL          &sk LALT         &sk  LSHIFT          &sk LGUI         &macro_ctrla       &macro_tmux_prev_window   &kp LEFT         &kp DOWN         &kp UP         &kp RIGHT     _v_           _v_
-_v_            &macro_ctrlaz      &macro_ctrlax    &macro_GS_j          _v_              _v_                &macro_tmux_next_window   &kp PG_DN        &kp UNDER        &kp PIPE       &kp GRAVE     &kp BACKSLASH _v_
+_v_            &macro_ctrlaz      &macro_ctrlax    &macro_GS_j          &morph_pgup_b    &morph_pgdn_f      &macro_tmux_next_window   &kp PG_DN        &kp UNDER        &kp PIPE       &kp GRAVE     &kp BACKSLASH _v_
 _v_            XXX                XXX              _v_                  _v_              &lt 1 TAB          &kp ENTER                 &lt 2 SPACE      &kp ENTER        &kp TAB        XXX           XXX
             >;
 

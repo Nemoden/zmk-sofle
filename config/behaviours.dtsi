@@ -1,5 +1,20 @@
 / {
   behaviors {
+    // these work on nav layer as PGUP/PGDN, if combined with ALT/CTRL these keys will produce ALT/CTRL+b/f for bash etc.
+    morph_pgup_b: morph_pgup_alt_ctl_b {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp PGUP>, <&kp b>;
+      mods = <(MOD_LALT|MOD_LCTL)>;
+      keep-mods = <(MOD_LALT|MOD_LCTL)>;
+    },
+    morph_pgdn_f: morph_pgdn_alt_ctl_f {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp PGDN>, <&kp f>;
+      mods = <(MOD_LALT|MOD_LCTL)>;
+      keep-mods = <(MOD_LALT|MOD_LCTL)>;
+    },
     tp: tap_preferred {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
