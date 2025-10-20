@@ -7,14 +7,14 @@
       bindings = <&kp PG_UP>, <&kp B>;
       mods = <(MOD_LALT|MOD_LCTL)>;
       keep-mods = <(MOD_LALT|MOD_LCTL)>;
-    },
+    };
     morph_pgdn_f: morph_pgdn_alt_ctl_f {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
       bindings = <&kp PG_DN>, <&kp F>;
       mods = <(MOD_LALT|MOD_LCTL)>;
       keep-mods = <(MOD_LALT|MOD_LCTL)>;
-    },
+    };
     tp: tap_preferred {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
