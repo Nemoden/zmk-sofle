@@ -61,7 +61,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: CHORD-NAV}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', h: SYN-NUM}
-  - '&tp LGUI ESC'
+  - {t: '$$mdi:keyboard-esc$$', h: LGUI}
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -109,8 +109,8 @@ layers:
   - '&macro_ctrlaz'
   - '&macro_ctrlax'
   - '&macro_GS_j'
-  - '&morph_pgup_b'
-  - '&morph_pgdn_f'
+  - {t: PG UP, s: B}
+  - {t: PG DN, s: F}
   - '&macro_tmux_next_window'
   - PG DN
   - _
