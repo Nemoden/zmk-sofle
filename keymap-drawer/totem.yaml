@@ -11,7 +11,6 @@ layers:
   - I
   - O
   - P
-  - {t: '&td_supershift', h: '$$mdi:apple-keyboard-shift$$'}
   - A
   - S
   - D
@@ -22,7 +21,7 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - {t: '''', h: '$$mdi:apple-keyboard-shift$$', s: '"'}
+  - {t: '&td_supershift', h: '$$mdi:apple-keyboard-shift$$'}
   - Z
   - X
   - C
@@ -33,6 +32,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
+  - {t: '''', h: '$$mdi:apple-keyboard-shift$$', s: '"'}
   - Meh+LGUI
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-tab$$', h: CHORD-NAV}
@@ -50,7 +50,6 @@ layers:
   - +
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - $$mdi:alpha-w-box$$
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
@@ -61,7 +60,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: \, s: \}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:alpha-w-box$$
   - '&macro_ctrlaz'
   - '&macro_ctrlax'
   - '&macro_GS_j'
@@ -72,6 +71,7 @@ layers:
   - '|'
   - {t: '`', s: '~'}
   - {t: /, s: /}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-tab$$', h: CHORD-NAV, type: held}
@@ -89,7 +89,6 @@ layers:
   - {t: '9', s: (}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '-', s: _}
   - +
   - {t: '[', s: '{'}
@@ -99,8 +98,8 @@ layers:
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
   - {t: '0', s: )}
-  - {t: '$$mdi:transfer$$', type: trans}
   - '&td_apos'
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&macro_minus_gt'
   - '&macro_protocol'
   - (
@@ -113,6 +112,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
   - {t: '$$mdi:backspace$$', h: SYN-NUM, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -120,7 +120,6 @@ layers:
   SYSTEM:
   - BT CLR ALL
   - $$mdi:bluetooth-off$$
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -149,6 +148,7 @@ layers:
   - '&td_bt0'
   - '&td_bt1'
   - '&td_bt2'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
