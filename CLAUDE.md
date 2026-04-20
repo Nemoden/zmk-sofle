@@ -35,7 +35,7 @@ boards/
   arm/eyelash_sofle/     — custom board definition (nRF52840, matrix, displays, encoder)
   shields/totem/         — TOTEM shield (copied from GEIGEIGEIST/zmk-config-totem)
 
-zephyr/module.yml        — declares board_root and shield_root for ZMK to find both
+zephyr/module.yml        — declares board_root for ZMK to find boards and shields
 ```
 
 ## Key Design Decisions
@@ -54,6 +54,26 @@ zephyr/module.yml        — declares board_root and shield_root for ZMK to find
 | 1 | CHORD-NAV | Sticky mods, arrows, tmux/chrome nav, PG_UP/DN |
 | 2 | SYN-NUM | Symbols (left), numpad (right), brackets with auto-close |
 | 3 | SYSTEM | Bluetooth profiles (tri-layer: 1+2) |
+
+## TOTEM Matrix Gotcha
+
+TOTEM's extra pinky keys (positions 20 and 31) are physically on the **bottom/Z row**, not the middle/home row. The matrix transform puts them at `RC(3,0)` and `RC(3,9)`. The keymap binding order is:
+```
+         10 keys  (top: 0-9)
+         10 keys  (middle: 10-19)
+    1+10+1 keys  (bottom: 20, 21-30, 31 — pinky keys here)
+          6 keys  (thumbs: 32-37)
+```
+
+## Flashing
+
+- **Sofle**: flash left half only (wired split, right gets firmware via connection)
+- **TOTEM**: flash left half only (wireless split, right half auto-pairs and forwards keypresses; keymap runs on left/central side)
+- **XIAO BLE bootloader**: double-tap reset, `cp -X firmware.uf2 /Volumes/XIAO-SENSE/`. macOS will report error -36 — ignore it, firmware flashes successfully (device disconnects mid-copy)
+
+## ZMK Version
+
+Both `west.yml` and `.github/workflows/build.yml` must pin to the same ZMK version (currently `v0.3.0`). Using `@main` will break builds due to Zephyr 4.1 board naming changes.
 
 ## When Editing Keymaps
 
