@@ -5,8 +5,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## What This Is
 
 ZMK firmware configuration for two split keyboards:
-- **Eyelash Sofle** (primary) — nRF52840, Nice View displays, encoder, RGB, joystick
-- **TOTEM** (secondary) — Seeeduino XIAO BLE, 38-key minimal
+- **Eyelash Sofle** — nRF52840, Nice View displays, encoder, RGB, joystick
+- **TOTEM** — Seeeduino XIAO BLE, 38-key column-staggered choc
 
 Both share the same logical 38-key layout, behaviors, and macros. The Sofle has extra hardware keys (number row, encoder, joystick) that are mapped to `&none`.
 
@@ -59,10 +59,15 @@ zephyr/module.yml        — declares board_root for ZMK to find boards and shie
 
 TOTEM's extra pinky keys (positions 20 and 31) are physically on the **bottom/Z row**, not the middle/home row. The matrix transform puts them at `RC(3,0)` and `RC(3,9)`. The keymap binding order is:
 ```
-         10 keys  (top: 0-9)
-         10 keys  (middle: 10-19)
-    1+10+1 keys  (bottom: 20, 21-30, 31 — pinky keys here)
-          6 keys  (thumbs: 32-37)
+          ╭───┬───┬───┬───┬───╮   ╭───┬───┬───┬───┬───╮
+          │ 0 │ 1 │ 2 │ 3 │ 4 │   │ 5 │ 6 │ 7 │ 8 │ 9 │  top (10 keys)
+          ├───┼───┼───┼───┼───┤   ├───┼───┼───┼───┼───┤
+          │10 │11 │12 │13 │14 │   │15 │16 │17 │18 │19 │  middle (10 keys)
+   ╭──┬───┼───┼───┼───┼───┼───┤   ├───┼───┼───┼───┼───┼───┬──╮
+   │20│21 │22 │23 │24 │25 │   │26 │27 │28 │29 │30 │31 │  bottom (12 keys, pinky keys here)
+   ╰──┴───┴───┼───┼───┼───╯   ╰───┼───┼───┼───┴───┴───╯
+              │32 │33 │34 │   │35 │36 │37 │  thumbs (6 keys)
+              ╰───┴───┴───╯   ╰───┴───┴───╯
 ```
 
 ## Flashing
