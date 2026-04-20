@@ -98,7 +98,7 @@ layers:
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
   - {t: '0', s: )}
-  - '&td_apos'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&macro_minus_gt'
   - '&macro_protocol'
@@ -110,7 +110,7 @@ layers:
   - {t: '3', s: '#'}
   - {t: ., s: ','}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&td_apos'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
