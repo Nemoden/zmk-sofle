@@ -1,6 +1,27 @@
 / {
   behaviors {
     // these work on nav layer as PGUP/PGDN, if combined with ALT/CTRL these keys will produce ALT/CTRL+b/f for bash etc.
+    // Backslash regardless of shift state (suppress shift → always \, never |)
+    morph_bslh: morph_backslash_only {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp BACKSLASH>, <&kp BACKSLASH>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    // Slash regardless of shift state (suppress shift → always /, never ?)
+    morph_fslh: morph_slash_only {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp SLASH>, <&kp SLASH>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    // Dot normally, comma when shifted (for numpad — shift+. = , not >)
+    morph_dot_comma: morph_dot_comma {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp DOT>, <&kp COMMA>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
     morph_pgup_b: morph_pgup_alt_ctl_b {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
