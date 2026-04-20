@@ -100,7 +100,7 @@ _v_            XXX                XXX              _v_                  _v_     
 XXX            XXX                XXX              XXX                  XXX               XXX                &kp UP_ARROW          XXX              XXX              XXX            XXX           XXX           XXX
 _v_            &macro_ne_eq       &kp EQUAL        &kp LEFT_BRACE       &kp RIGHT_BRACE   &td_squigly        &kp DOWN_ARROW        &kp N7           &kp N8           &kp N9         &kp BACKSPACE _v_           _v_
 _v_            &kp MINUS          &kp PLUS         &kp LEFT_BRACKET     &kp RIGHT_BRACKET &td_bracket        &kp LEFT_ARROW        &kp N4           &kp N5           &kp N6         &kp N0        _v_           &td_apos
-_v_            &macro_minus_gt    &macro_protocol  &kp LPAR             &kp RPAR          &macro_paren       &kp RIGHT_ARROW       &kp N1           &kp N2           &kp N3         &kp DOT       _v_           _v_
+_v_            &macro_minus_gt    &macro_protocol  &kp LPAR             &kp RPAR          &macro_paren       &kp RIGHT_ARROW       &kp N1           &kp N2           &kp N3         &morph_dot_comma _v_         _v_
 _v_            XXX                XXX              _v_                  _v_               _v_                &kp ENTER             &lt 2 BACKSPACE  _v_               _v_            XXX           XXX
             >;
 

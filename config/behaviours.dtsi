@@ -15,6 +15,13 @@
       bindings = <&kp SLASH>, <&kp SLASH>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
+    // Dot normally, comma when shifted (for numpad — shift+. = , not >)
+    morph_dot_comma: morph_dot_comma {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp DOT>, <&kp COMMA>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
     morph_pgup_b: morph_pgup_alt_ctl_b {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
