@@ -83,8 +83,8 @@ layers:
   - '&macro_ctrlq'
   - '&macro_ctrlw'
   - '&macro_GS_space'
-  - '&macro_CS_tab'
-  - '&macro_C_tab'
+  - Sft+Ctl+$$mdi:keyboard-tab$$
+  - Ctl+$$mdi:keyboard-tab$$
   - '&macro_tmux_next_pane'
   - PG UP
   - {t: '-', s: _}
@@ -103,7 +103,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: \, s: \}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&macro_ctrlaz'
@@ -116,7 +116,7 @@ layers:
   - _
   - '|'
   - {t: '`', s: '~'}
-  - {t: \, s: '|'}
+  - {t: /, s: /}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -125,7 +125,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-tab$$', h: CHORD-NAV, type: held}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-space$$', h: SYN-NUM}
+  - {t: '$$mdi:backspace$$', h: SYN-NUM}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -151,11 +151,11 @@ layers:
   - '}'
   - '&td_squigly'
   - $$mdi:arrow-down-bold$$
-  - '#'
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
-  - ':'
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '-', s: _}
@@ -164,11 +164,11 @@ layers:
   - {t: ']', s: '}'}
   - '&td_bracket'
   - $$mdi:arrow-left-bold$$
-  - _
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
   - {t: '0', s: )}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&td_apos'
   - {t: '$$mdi:transfer$$', type: trans}
   - '&macro_minus_gt'
@@ -177,11 +177,11 @@ layers:
   - )
   - '&macro_paren'
   - $$mdi:arrow-right-bold$$
-  - {t: \, s: '|'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
-  - {t: /, s: '?'}
+  - {t: ., s: '>'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -255,7 +255,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-tab$$', h: CHORD-NAV, type: held}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-space$$', h: SYN-NUM, type: held}
+  - {t: '$$mdi:backspace$$', h: SYN-NUM, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
