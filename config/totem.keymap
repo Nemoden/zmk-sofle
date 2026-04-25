@@ -41,11 +41,11 @@
             display-name = "CHORD-NAV";
             bindings = <
 //                        ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-                           &macro_ctrlq &macro_ctrlw &macro_GS_space &kp LS(LC(TAB)) &kp LC(TAB)   &kp PG_UP  &kp MINUS  &kp PLUS   &kp LBKT   &kp RBKT
+                           &td_vim_quit &macro_vim_save &macro_GS_space &kp LS(LC(TAB)) &kp LC(TAB)   &morph_ctrlp_pgup &kp MINUS  &kp PLUS   &kp LBKT   &kp RBKT
 //                        ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-                           &sk LCTRL  &sk LALT   &sk LSHIFT &sk LGUI   &macro_ctrla   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &morph_bslh
+                           &sk LCTRL  &sk LALT   &sk LSHIFT &sk LGUI   &kp LC(A)      &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &morph_bslh
 // ╭──────────┬───────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────╮
-&caps_word                 &macro_ctrlaz &macro_ctrlax &macro_GS_j &morph_pgup_b &morph_pgdn_f   &kp PG_DN  &kp UNDER  &kp PIPE   &kp GRAVE  &morph_fslh _v_
+&caps_word                 &macro_ctrlaz &macro_ctrlax &macro_GS_j &morph_pgup_b &morph_pgdn_f   &morph_ctrln_pgdn &kp UNDER  &kp PIPE   &kp GRAVE  &morph_fslh _v_
 // ╰──────────┴───────────┴──────────┼──────────┼──────────┼──────────┤               ├──────────┼──────────┼──────────┼──────────┴──────────┴──────────╯
                                       _v_        _v_        &lt 1 TAB                 &lt 2 BACKSPACE &kp ENTER &kp TAB
 //                                   ╰──────────┴──────────┴──────────╯               ╰──────────┴──────────┴──────────╯
@@ -71,11 +71,11 @@ _v_                        &macro_minus_gt &macro_protocol &kp LPAR &kp RPAR &ma
             display-name = "SYSTEM";
             bindings = <
 //                        ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-                           &bt BT_CLR_ALL &bt BT_CLR _v_     _v_        _v_            _v_        _v_        _v_        _v_        _v_
+                           &bt BT_CLR_ALL &bt BT_CLR _v_     _v_        _v_            &kp C_BRI_DN &kp C_BRI_UP _v_     _v_        &kp C_PP
 //                        ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-                           _v_        _v_        _v_        _v_        _v_            _v_        &td_bt3    &td_bt4    _v_        _v_
+                           _v_        _v_        _v_        _v_        _v_            &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT _v_
 // ╭──────────┬───────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────╮
-_v_                        _v_        _v_        _v_        _v_        _v_            _v_        &td_bt0    &td_bt1    &td_bt2    _v_        _v_
+_v_                        _v_        _v_        _v_        _v_        _v_            &td_bt0    &td_bt1    &td_bt2    &td_bt3    &td_bt4    _v_
 // ╰──────────┴───────────┴──────────┼──────────┼──────────┼──────────┤               ├──────────┼──────────┼──────────┼──────────┴──────────┴──────────╯
                                       _v_        _v_        &lt 1 TAB                 &lt 2 BACKSPACE _v_   _v_
 //                                   ╰──────────┴──────────┴──────────╯               ╰──────────┴──────────┴──────────╯

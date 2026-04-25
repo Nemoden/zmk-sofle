@@ -36,6 +36,18 @@
       mods = <(MOD_LALT|MOD_LCTL)>;
       keep-mods = <(MOD_LALT|MOD_LCTL)>;
     };
+    morph_ctrlp_pgup: morph_ctrlp_pgup {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp LC(P)>, <&kp PG_UP>;
+      mods = <(MOD_LALT|MOD_LCTL)>;
+    };
+    morph_ctrln_pgdn: morph_ctrln_pgdn {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp LC(N)>, <&kp PG_DN>;
+      mods = <(MOD_LALT|MOD_LCTL)>;
+    };
     tp: tap_preferred {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
@@ -139,6 +151,12 @@
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&macro_quotes>, <&macro_apos>;
+    };
+    td_vim_quit: td_vim_quit {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&macro_vim_quit>, <&macro_vim_force_quit>;
     };
     td_bt0: td_bt0 {
       compatible = "zmk,behavior-tap-dance";

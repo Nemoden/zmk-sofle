@@ -1,13 +1,5 @@
 / {
   macros {
-    macro_ctrla: ctrl_a { // Ctrl+A
-      compatible = "zmk,behavior-macro";
-      //label = "Ctrl+A";
-      #binding-cells = <0>;
-      wait-ms = <30>;
-      tap-ms = <30>;
-      bindings = <&macro_tap &kp LC(A)>;
-    };
     macro_ctrlaz: macro_ctrl_a_z {
       compatible = "zmk,behavior-macro";
       //label = "{} + Return";
@@ -23,14 +15,6 @@
       bindings
       = <&macro_tap &kp LC(A) &kp X>
       ;
-    };
-    macro_ctrlq: ctrl_q { // Ctrl+Q
-      compatible = "zmk,behavior-macro";
-      //label = "Ctrl+Q";
-      #binding-cells = <0>;
-      wait-ms = <30>;
-      tap-ms = <30>;
-      bindings = <&macro_tap &kp LC(Q)>;
     };
     macro_GS_space: cmd_shift_space { // GUI + SHIFT + SPACE
       compatible = "zmk,behavior-macro";
@@ -77,14 +61,6 @@
       , <&macro_tap &kp LC(TAB)>
       , <&macro_release &kp LSHIFT>
       ;
-    };
-    macro_ctrlw: ctrl_w { // Ctrl+Q
-      compatible = "zmk,behavior-macro";
-      //label = "Ctrl+W";
-      #binding-cells = <0>;
-      wait-ms = <30>;
-      tap-ms = <30>;
-      bindings = <&macro_tap &kp LC(W)>;
     };
     macro_tmux_prefix: macro_tmux_prefix { // Ctrl+A
       compatible = "zmk,behavior-macro";
@@ -327,6 +303,27 @@
       bindings
       = <&macro_tap &kp MINUS &kp GREATER_THAN>
       ;
+    };
+    macro_vim_quit: macro_vim_quit {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      wait-ms = <30>;
+      tap-ms = <30>;
+      bindings = <&macro_tap &kp ESC &kp COLON &kp Q &kp ENTER>;
+    };
+    macro_vim_force_quit: macro_vim_force_quit {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      wait-ms = <30>;
+      tap-ms = <30>;
+      bindings = <&macro_tap &kp ESC &kp COLON &kp Q &kp EXCL &kp ENTER>;
+    };
+    macro_vim_save: macro_vim_save {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      wait-ms = <30>;
+      tap-ms = <30>;
+      bindings = <&macro_tap &kp ESC &kp COLON &kp W &kp ENTER>;
     };
   };
 };

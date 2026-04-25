@@ -85,9 +85,9 @@ XXX                       XXX              XXX             XXX              XXX 
         layer1 {
             bindings = <
 XXX            XXX                XXX              XXX                  XXX              XXX                &macro_tmux_prev_pane     XXX              XXX              XXX            XXX           XXX           XXX
-_v_            &macro_ctrlq       &macro_ctrlw     &macro_GS_space      &kp LS(LC(TAB))  &kp LC(TAB)        &macro_tmux_next_pane     &kp PG_UP        &kp MINUS        &kp PLUS       &kp LBKT      &kp RBKT      _v_
-&caps_word     &sk LCTRL          &sk LALT         &sk  LSHIFT          &sk LGUI         &macro_ctrla       &macro_tmux_prev_window   &kp LEFT         &kp DOWN         &kp UP         &kp RIGHT     &morph_bslh   _v_
-_v_            &macro_ctrlaz      &macro_ctrlax    &macro_GS_j          &morph_pgup_b    &morph_pgdn_f      &macro_tmux_next_window   &kp PG_DN        &kp UNDER        &kp PIPE       &kp GRAVE     &morph_fslh   _v_
+_v_            &td_vim_quit        &macro_vim_save  &macro_GS_space      &kp LS(LC(TAB))  &kp LC(TAB)        &macro_tmux_next_pane     &morph_ctrlp_pgup &kp MINUS       &kp PLUS       &kp LBKT      &kp RBKT      _v_
+&caps_word     &sk LCTRL          &sk LALT         &sk  LSHIFT          &sk LGUI         &kp LC(A)          &macro_tmux_prev_window   &kp LEFT         &kp DOWN         &kp UP         &kp RIGHT     &morph_bslh   _v_
+_v_            &macro_ctrlaz      &macro_ctrlax    &macro_GS_j          &morph_pgup_b    &morph_pgdn_f      &macro_tmux_next_window   &morph_ctrln_pgdn &kp UNDER       &kp PIPE       &kp GRAVE     &morph_fslh   _v_
 _v_            XXX                XXX              _v_                  _v_              &lt 1 TAB          &kp ENTER                 &lt 2 BACKSPACE  &kp ENTER        &kp TAB        XXX           XXX
             >;
 
@@ -111,9 +111,9 @@ _v_            XXX                XXX              _v_                  _v_     
         layer_3 {
             bindings = <
 XXX            XXX                XXX              XXX                  XXX               XXX                &kp UP_ARROW          XXX              XXX              XXX            XXX           XXX           XXX
-_v_            &bt BT_CLR_ALL     &bt BT_CLR       _v_                  _v_               _v_                &kp DOWN_ARROW        _v_              _v_              _v_            _v_           _v_           _v_
-_v_            _v_                _v_              _v_                  _v_               _v_                &kp LEFT_ARROW        _v_              &td_bt3          &td_bt4        _v_           _v_           _v_
-_v_            _v_                _v_              _v_                  _v_               _v_                &kp RIGHT_ARROW       _v_              &td_bt0          &td_bt1        &td_bt2       _v_           _v_
+_v_            &bt BT_CLR_ALL     &bt BT_CLR       _v_                  _v_               _v_                &kp DOWN_ARROW        &kp C_BRI_DN     &kp C_BRI_UP     _v_            _v_           &kp C_PP      _v_
+_v_            _v_                _v_              _v_                  _v_               _v_                &kp LEFT_ARROW        &kp C_PREV       &kp C_VOL_DN     &kp C_VOL_UP   &kp C_NEXT    _v_           _v_
+_v_            _v_                _v_              _v_                  _v_               _v_                &kp RIGHT_ARROW       &td_bt0          &td_bt1          &td_bt2        &td_bt3       &td_bt4       _v_
 _v_            XXX                XXX              _v_                  _v_               &lt 1 TAB          &kp ENTER             &lt 2 BACKSPACE  _v_              _v_            XXX           XXX
             >;
 
