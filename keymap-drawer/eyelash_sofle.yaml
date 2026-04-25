@@ -86,7 +86,7 @@ layers:
   - Sft+Ctl+$$mdi:keyboard-tab$$
   - Ctl+$$mdi:keyboard-tab$$
   - '&macro_tmux_next_pane'
-  - {t: Ctl+P, s: PG UP}
+  - {t: Ctl+P, s: '&macro_tmux_prev_window'}
   - {t: '-', s: _}
   - +
   - {t: '[', s: '{'}
@@ -112,7 +112,7 @@ layers:
   - {t: PG UP, s: B}
   - {t: PG DN, s: F}
   - '&macro_tmux_next_window'
-  - {t: Ctl+N, s: PG DN}
+  - {t: Ctl+N, s: '&macro_tmux_next_window'}
   - _
   - '|'
   - {t: '`', s: '~'}
