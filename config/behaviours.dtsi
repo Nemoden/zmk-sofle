@@ -36,17 +36,17 @@
       mods = <(MOD_LALT|MOD_LCTL)>;
       keep-mods = <(MOD_LALT|MOD_LCTL)>;
     };
-    morph_ctrlp_pgup: morph_ctrlp_pgup {
+    morph_ctrlp_tmux: morph_ctrlp_tmux {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp LC(P)>, <&kp PG_UP>;
-      mods = <(MOD_LALT|MOD_LCTL)>;
+      bindings = <&kp LC(P)>, <&macro_tmux_prev_window>;
+      mods = <(MOD_LALT)>;
     };
-    morph_ctrln_pgdn: morph_ctrln_pgdn {
+    morph_ctrln_tmux: morph_ctrln_tmux {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp LC(N)>, <&kp PG_DN>;
-      mods = <(MOD_LALT|MOD_LCTL)>;
+      bindings = <&kp LC(N)>, <&macro_tmux_next_window>;
+      mods = <(MOD_LALT)>;
     };
     tp: tap_preferred {
       compatible = "zmk,behavior-hold-tap";
