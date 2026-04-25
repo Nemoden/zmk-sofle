@@ -309,14 +309,14 @@
       #binding-cells = <0>;
       wait-ms = <30>;
       tap-ms = <30>;
-      bindings = <&macro_tap &kp ESC &kp COLON &kp Q &kp ENTER>;
+      bindings = <&macro_tap &kp ESC &kp COLON &kp Q &kp A &kp ENTER>;
     };
     macro_vim_force_quit: macro_vim_force_quit {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       wait-ms = <30>;
       tap-ms = <30>;
-      bindings = <&macro_tap &kp ESC &kp COLON &kp Q &kp EXCL &kp ENTER>;
+      bindings = <&macro_tap &kp ESC &kp COLON &kp Q &kp A &kp EXCL &kp ENTER>;
     };
     macro_vim_save: macro_vim_save {
       compatible = "zmk,behavior-macro";
