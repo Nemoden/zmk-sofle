@@ -36,16 +36,28 @@
       mods = <(MOD_LALT|MOD_LCTL)>;
       keep-mods = <(MOD_LALT|MOD_LCTL)>;
     };
-    morph_ctrlp_tmux: morph_ctrlp_tmux {
+    morph_ctrlp_home: morph_ctrlp_home {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp LC(P)>, <&macro_tmux_prev_window>;
+      bindings = <&kp LC(P)>, <&kp HOME>;
       mods = <(MOD_LALT)>;
     };
-    morph_ctrln_tmux: morph_ctrln_tmux {
+    morph_ctrln_end: morph_ctrln_end {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp LC(N)>, <&macro_tmux_next_window>;
+      bindings = <&kp LC(N)>, <&kp END>;
+      mods = <(MOD_LALT)>;
+    };
+    morph_tmux_prev: morph_tmux_prev {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&macro_tmux_prev_window>, <&kp LS(LC(TAB))>;
+      mods = <(MOD_LALT)>;
+    };
+    morph_tmux_next: morph_tmux_next {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&macro_tmux_next_window>, <&kp LC(TAB)>;
       mods = <(MOD_LALT)>;
     };
     tp: tap_preferred {
