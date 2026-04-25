@@ -40,12 +40,12 @@ layers:
   - {t: '$$mdi:keyboard-esc$$', h: LGUI}
   - $$mdi:apple-keyboard-control$$
   CHORD-NAV:
-  - '&macro_ctrlq'
-  - '&macro_ctrlw'
+  - '&td_vim_quit'
+  - '&macro_vim_save'
   - '&macro_GS_space'
   - Sft+Ctl+$$mdi:keyboard-tab$$
   - Ctl+$$mdi:keyboard-tab$$
-  - PG UP
+  - {t: Ctl+P, s: PG UP}
   - {t: '-', s: _}
   - +
   - {t: '[', s: '{'}
@@ -54,7 +54,7 @@ layers:
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: LGUI, h: '$$mdi:gesture-tap-hold$$'}
-  - '&macro_ctrla'
+  - Ctl+A
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
@@ -66,7 +66,7 @@ layers:
   - '&macro_GS_j'
   - {t: PG UP, s: B}
   - {t: PG DN, s: F}
-  - PG DN
+  - {t: Ctl+N, s: PG DN}
   - _
   - '|'
   - {t: '`', s: '~'}
@@ -123,21 +123,20 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:brightness-7$$
+  - $$mdi:brightness-5$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:play-pause$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&td_bt3'
-  - '&td_bt4'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:skip-previous$$
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
+  - $$mdi:skip-next$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -148,7 +147,8 @@ layers:
   - '&td_bt0'
   - '&td_bt1'
   - '&td_bt2'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&td_bt3'
+  - '&td_bt4'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
