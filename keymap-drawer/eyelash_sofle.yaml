@@ -83,10 +83,10 @@ layers:
   - '&td_vim_quit'
   - '&macro_vim_save'
   - '&macro_GS_space'
-  - Sft+Ctl+$$mdi:keyboard-tab$$
-  - Ctl+$$mdi:keyboard-tab$$
+  - {t: '&macro_tmux_prev_window', s: 'Sft+Ctl+$$mdi:keyboard-tab$$'}
+  - {t: '&macro_tmux_next_window', s: 'Ctl+$$mdi:keyboard-tab$$'}
   - '&macro_tmux_next_pane'
-  - {t: Ctl+P, s: '&macro_tmux_prev_window'}
+  - {t: Ctl+P, s: HOME}
   - {t: '-', s: _}
   - +
   - {t: '[', s: '{'}
@@ -112,7 +112,7 @@ layers:
   - {t: PG UP, s: B}
   - {t: PG DN, s: F}
   - '&macro_tmux_next_window'
-  - {t: Ctl+N, s: '&macro_tmux_next_window'}
+  - {t: Ctl+N, s: END}
   - _
   - '|'
   - {t: '`', s: '~'}
