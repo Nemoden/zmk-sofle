@@ -44,32 +44,6 @@
       , <&macro_release &kp LGUI>
       ;
     };
-    macro_C_tab: macro_ctrl_tab { // Ctrl + TAB
-      compatible = "zmk,behavior-macro";
-      //label = "Ctrl + TAB";
-      #binding-cells = <0>;
-      wait-ms = <10>;
-      bindings = <&kp LC(TAB)>;
-    };
-    macro_CS_tab: macro_ctrl_shift_tab { // Shift + Ctrl + TAB
-      compatible = "zmk,behavior-macro";
-      //label = "Ctrl + Shift + TAB";
-      #binding-cells = <0>;
-      wait-ms = <10>;
-      bindings
-      = <&macro_press &kp LSHIFT>
-      , <&macro_tap &kp LC(TAB)>
-      , <&macro_release &kp LSHIFT>
-      ;
-    };
-    macro_tmux_prefix: macro_tmux_prefix { // Ctrl+A
-      compatible = "zmk,behavior-macro";
-      //label = "Tmux Prefix";
-      #binding-cells = <0>;
-      wait-ms = <30>;
-      tap-ms = <30>;
-      bindings = <&macro_tap &kp LC(A)>;
-    };
     macro_tmux_next_window: macro_tmux_next_window { // Ctrl+A + N
       compatible = "zmk,behavior-macro";
       //label = "Next Tmux Window";
@@ -90,16 +64,6 @@
       , <&kp P>
       ;
     };
-    macro_tmux_cmd: macro_tmux_cmd { // Ctrl+A + :
-      compatible = "zmk,behavior-macro";
-      //label = "Tmux Command";
-      #binding-cells = <0>;
-      wait-ms = <10>;
-      bindings
-      = <&macro_tap &kp LC(A)>
-      , <&kp COLON>
-      ;
-    };
     macro_tmux_next_pane: macro_tmux_next_pane { // Ctrl+A + O
       compatible = "zmk,behavior-macro";
       //label = "Tmux Next Pane";
@@ -107,33 +71,6 @@
       bindings
       = <&macro_tap &kp LC(A)>
       , <&kp O>
-      ;
-    };
-    macro_tmux_zoom: macro_tmux_zoom { // Ctrl+A + z
-      compatible = "zmk,behavior-macro";
-      //label = "Tmux Zoom";
-      #binding-cells = <0>;
-      bindings
-      = <&macro_tap &kp LC(A)>
-      , <&kp Z>
-      ;
-    };
-    macro_tmux_close: macro_tmux_close { // Ctrl+A + x
-      compatible = "zmk,behavior-macro";
-      //label = "Tmux Close";
-      #binding-cells = <0>;
-      bindings
-      = <&macro_tap &kp LC(A)>
-      , <&kp X>
-      ;
-    };
-    macro_tmux_new: macro_tmux_new { // Ctrl+A + C
-      compatible = "zmk,behavior-macro";
-      //label = "Tmux New Window";
-      #binding-cells = <0>;
-      bindings
-      = <&macro_tap &kp LC(A)>
-      , <&kp C>
       ;
     };
     // There is no inverse for <Prefix o> in TMUX, so we do this instead :select-pane -t :.- followed by an ENTER
@@ -168,68 +105,12 @@
       , <&macro_release &kp LSHIFT>
       ;
     };
-    macro_plus_eq: macro_plus_equal {
-      compatible = "zmk,behavior-macro";
-      //label = "+=";
-      #binding-cells = <0>;
-      bindings
-      = <&macro_tap &kp PLUS &kp EQUAL>
-      ;
-    };
-    macro_minus_eq: macro_minus_equal {
-      compatible = "zmk,behavior-macro";
-      //label = "-=";
-      #binding-cells = <0>;
-      bindings
-      = <&macro_tap &kp MINUS &kp EQUAL>
-      ;
-    };
-    macro_plus_plus: macro_plus_plus {
-      compatible = "zmk,behavior-macro";
-      //label = "++";
-      #binding-cells = <0>;
-      bindings
-      = <&macro_tap &kp PLUS &kp PLUS>
-      ;
-    };
-    macro_minus_minus: macro_minus_minus {
-      compatible = "zmk,behavior-macro";
-      //label = "--";
-      #binding-cells = <0>;
-      bindings
-      = <&macro_tap &kp MINUS &kp MINUS>
-      ;
-    };
-    macro_eq_eq: macro_equal_equal {
-      compatible = "zmk,behavior-macro";
-      //label = "==";
-      #binding-cells = <0>;
-      bindings
-      = <&macro_tap &kp EQUAL &kp EQUAL>
-      ;
-    };
-    macro_eq_eq_eq: macro_equal_equal_equal {
-      compatible = "zmk,behavior-macro";
-      //label = "===";
-      #binding-cells = <0>;
-      bindings
-      = <&macro_tap &kp EQUAL &kp EQUAL &kp EQUAL>
-      ;
-    };
     macro_ne_eq: macro_not_equal {
       compatible = "zmk,behavior-macro";
       //label = "!=";
       #binding-cells = <0>;
       bindings
       = <&macro_tap &kp EXCLAMATION &kp EQUAL>
-      ;
-    };
-    macro_ne_eq_eq: macro_not_equal_equal {
-      compatible = "zmk,behavior-macro";
-      //label = "!==";
-      #binding-cells = <0>;
-      bindings
-      = <&macro_tap &kp EXCLAMATION &kp EQUAL &kp EQUAL>
       ;
     };
     macro_quotes: macro_quotes {
